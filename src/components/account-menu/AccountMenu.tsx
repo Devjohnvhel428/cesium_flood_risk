@@ -10,10 +10,9 @@ const AccountMenu = () => {
 
     useEffect(() => {
         const geoTech = window.geoTech;
-        const user = geoTech.currentUser;
 
-        setUserName(user.email);
-        setUserId(user.email);
+        setUserName(import.meta.env.VITE_USER_EMAIL);
+        setUserId(import.meta.env.VITE_USER_NAME);
 
         setTop(geoTech.uiManager.getNavigationHeight());
 

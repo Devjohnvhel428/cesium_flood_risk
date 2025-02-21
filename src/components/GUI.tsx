@@ -27,26 +27,29 @@ import {
 } from "@esri/calcite-components-react";
 import { Cesium3DTileset } from "cesium";
 import { Toaster } from "react-hot-toast";
+import { useSelector } from "react-redux";
 
-import EntityIconSvg from "../assets/side-nav-svgs/Entity.svg?react";
-import FavoriteIconSvg from "../assets/side-nav-svgs/Favorite.svg?react";
-import EmissionIconSvg from "../assets/side-nav-svgs/Emission.svg?react";
-import SettingsIconSvg from "../assets/side-nav-svgs/Settings.svg?react";
-import LogoutIconSvg from "../assets/side-nav-svgs/Logout.svg?react";
+import WeatherIconSvg from "../assets/side-nav-svgs/Weather.svg?react";
+import CalendarIconSvg from "../assets/side-nav-svgs/Calendar.svg?react";
+import EvacuationIconSvg from "../assets/side-nav-svgs/Evacuation.svg?react";
 import BasemapIconSvg from "../assets/side-nav-svgs/Basemap.svg?react";
 
 import { GeoTech } from "@core/GeoTech";
 import { GeoTechEventsTypes } from "@core/Events";
 import { DataActionIds } from "./data-action-ids";
 import { GlobalStyles } from "./index.styles";
+import BottomBar from "./bottombar/BottomBar";
 import GeoTechViewerWrapper from "./GeoTechViewerWrapper";
 import EntitiesLayout from "./sidebar-elements/entities/EntitiesLayout";
 import FavoritesLayout from "./sidebar-elements/favorites/FavoritesLayout";
 import EmissionLayout from "./sidebar-elements/emission/EmissionLayout";
-import { useActions } from "../hooks/useActions";
 import AccountMenu from "./account-menu/AccountMenu";
 import MapControlBar from "./map-control-bar/MapControlBar";
 import BasemapPicker from "./basemap-picker/BaseMapPicker";
+import { getWeather } from "../redux";
+import { useActions } from "../hooks/useActions";
+// @ts-ignore
+import mockData from "../../public/data/mock_data.json";
 
 interface GUIProps {
     geoTech: GeoTech;
@@ -54,16 +57,32 @@ interface GUIProps {
 
 // eslint-disable-next-line arrow-body-style
 const GUI = ({ geoTech }: GUIProps) => {
-    const { setCurrentUser } = useActions();
+    const currentWeather = useSelector(getWeather);
+    const { setWeatherData } = useActions();
 
     useEffect(() => {
         geoTech.uiManager.initialize();
+        if (!import.meta.env.VITE_USE_MOCKDATA) {
+            let response = null;
+            const fetchWeatherData = async () => {
+                response = await geoTech.apiInterface.fetchWeatherForAllCities();
+                setWeatherData(response?.data);
+            };
+            fetchWeatherData();
+        } else {
+            setWeatherData({ current: mockData.data });
+        }
     }, []);
+
+    useEffect(() => {
+        console.log("currentWeather", currentWeather);
+    }, [currentWeather]);
 
     useCustomEventListener(GeoTechEventsTypes.BasemapChanged, (name: string) => {
         if (name === "Google 3d") {
+            const googleAPIKey = import.meta.env.VITE_GOOGLE_API_KEY;
             const tilesetPromise = Cesium3DTileset.fromUrl(
-                "https://tile.googleapis.com/v1/3dtiles/root.json?key=AIzaSyB0OID3f2be5GSXCMq7TFBfOlUmBiFBDrU"
+                `https://tile.googleapis.com/v1/3dtiles/root.json?key=${googleAPIKey}`
             );
 
             tilesetPromise
@@ -84,14 +103,14 @@ const GUI = ({ geoTech }: GUIProps) => {
                 <CalciteNavigation slot="header">
                     <CalciteNavigationLogo
                         id="header-title"
-                        heading="AirMod3D"
+                        heading="GGI"
                         heading-level="1"
                         slot="logo"
                     ></CalciteNavigationLogo>
                     <CalciteNavigationUser
                         slot="user"
-                        full-name={geoTech.currentUser.email}
-                        username={geoTech.currentUser.email}
+                        full-name={import.meta.env.VITE_USER_EMAIL}
+                        username={import.meta.env.VITE_USER_NAME}
                     ></CalciteNavigationUser>
                 </CalciteNavigation>
 
@@ -102,23 +121,23 @@ const GUI = ({ geoTech }: GUIProps) => {
                             data-action-id={DataActionIds.Entities}
                             aria-expanded="false"
                             appearance="solid"
-                            text="Entities"
+                            text="Current"
                         >
-                            <EntityIconSvg />
+                            <WeatherIconSvg />
                             <CalciteTooltip reference-element="action-entities" closeOnClick={true}>
-                                <span>Entities</span>
+                                <span>Current Weather</span>
                             </CalciteTooltip>
                         </CalciteAction>
-                        <CalciteAction id="action-favorite" data-action-id={DataActionIds.Favorite} text="Favorite">
-                            <FavoriteIconSvg />
+                        <CalciteAction id="action-favorite" data-action-id={DataActionIds.Favorite} text="Historical">
+                            <CalendarIconSvg />
                             <CalciteTooltip reference-element="action-favorite" closeOnClick={true}>
-                                <span>Favorite</span>
+                                <span>Historical Data</span>
                             </CalciteTooltip>
                         </CalciteAction>
-                        <CalciteAction id="action-emission" data-action-id={DataActionIds.Emission} text="Emission">
-                            <EmissionIconSvg />
+                        <CalciteAction id="action-emission" data-action-id={DataActionIds.Emission} text="Evacuation">
+                            <EvacuationIconSvg />
                             <CalciteTooltip reference-element="action-emission" closeOnClick={true}>
-                                <span>Emission</span>
+                                <span>Evacuation Routes</span>
                             </CalciteTooltip>
                         </CalciteAction>
 
@@ -126,36 +145,6 @@ const GUI = ({ geoTech }: GUIProps) => {
                             <BasemapIconSvg />
                             <CalciteTooltip reference-element="action-basemap" closeOnClick={true}>
                                 <span>Basemap</span>
-                            </CalciteTooltip>
-                        </CalciteAction>
-
-                        <CalciteAction
-                            id="action-settings"
-                            data-action-id={DataActionIds.Settings}
-                            text="Settings"
-                            slot="actions-end"
-                        >
-                            <SettingsIconSvg />
-                            <CalciteTooltip reference-element="action-settings" closeOnClick={true}>
-                                <span>Settings</span>
-                            </CalciteTooltip>
-                        </CalciteAction>
-                        <CalciteAction
-                            id="action-logout"
-                            data-action-id={DataActionIds.Logout}
-                            text="Logout"
-                            slot="actions-end"
-                            onClick={() => {
-                                const geoTech = window.geoTech;
-
-                                geoTech.logout();
-
-                                setCurrentUser(undefined);
-                            }}
-                        >
-                            <LogoutIconSvg />
-                            <CalciteTooltip reference-element="action-logout" closeOnClick={true}>
-                                <span>Logout</span>
                             </CalciteTooltip>
                         </CalciteAction>
                     </CalciteActionBar>
@@ -180,6 +169,7 @@ const GUI = ({ geoTech }: GUIProps) => {
                 <GeoTechViewerWrapper geoTech={geoTech} />
 
                 <GlobalStyles />
+                <BottomBar />
                 <MapControlBar />
             </CalciteShell>
 

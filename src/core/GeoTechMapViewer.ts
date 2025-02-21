@@ -36,12 +36,11 @@ export class GeoTechMapViewer {
             throw new DeveloperError("container is required.");
         }
 
-        Ion.defaultAccessToken =
-            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJjYWYyMmUwNS01OGQ0LTQ1ZGUtYjNmZS02Yjg3ZDU2ODE5NjgiLCJpZCI6MjUzNTAxLCJpYXQiOjE3MzA5NjE3NTZ9.oqprAFaWJxd4fhrWHNGkwoLGpNXLe4DkxoKx9YJXxUQ";
+        Ion.defaultAccessToken = import.meta.env.VITE_CESIUM_TOKEN;
 
         const extent = Rectangle.fromDegrees(115.0, 5.0, 130.0, 20.0);
         Camera.DEFAULT_VIEW_RECTANGLE = extent;
-        Camera.DEFAULT_VIEW_FACTOR = 0;
+        Camera.DEFAULT_VIEW_FACTOR = 0.03;
 
         this._geoTech = geoTech;
 

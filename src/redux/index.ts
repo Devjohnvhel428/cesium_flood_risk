@@ -2,5 +2,5 @@
 /* qeslint-disable */
 export * from "./store";
 export * from "./app/appReducer";
-export * from "./settings/settingsReducer";
+export * from "./weather/weatherReducer";
 export * as actionCreators from "./actionCreators";

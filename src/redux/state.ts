@@ -1,13 +1,16 @@
 // q@ts-nocheck
 /* qeslint-disable */
-import { User } from "@supabase/supabase-js";
 
 export interface AppState {
     loading: boolean;
-    user: User | undefined;
     error: string | null;
 }
 
-export interface SettingsState {
+export interface Weather {
+    current: any[];
+}
+
+export interface WeatherState {
     visibleCloud: boolean;
+    weather: Weather;
 }
