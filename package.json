@@ -1,7 +1,7 @@
 {
     "name": "geotech",
     "private": true,
-    "version": "1.0.1",
+    "version": "1.0.3",
     "main": "index.ts",
     "type": "module",
     "repository": "https://github.com/Devjohnvhel428/cesium_flood_risk",

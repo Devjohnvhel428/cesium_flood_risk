@@ -9,7 +9,7 @@ import { BasemapPickerContainer } from "./basemap-picker.style";
 interface Props {}
 
 const BasemapPicker = ({}: Props) => {
-    const [currentProviderViewModelIndex, setCurrentProviderViewModelIndex] = useState(1);
+    const [currentProviderViewModelIndex, setCurrentProviderViewModelIndex] = useState(0);
     const viewer = window.geoTech.mapViewer.viewer;
 
     const imageryProviderViewModels = viewer.baseLayerPicker.viewModel.imageryProviderViewModels;

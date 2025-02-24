@@ -1,5 +1,5 @@
 import axios from "axios";
-import { cities } from "../../public/data/city_data";
+import { cities } from "../data/city_data";
 
 class APIInterface {
     private readonly _baseWeatherUrl: string;
@@ -12,7 +12,6 @@ class APIInterface {
         this._weatherAPIKey = import.meta.env.VITE_WEATHER_API_KEY;
         this._chunkSize = 100;
         this._queryString = cities.map((city) => city.city_id).join(",");
-        console.log("query", `${this._baseWeatherUrl}/current?cities=${this._queryString}&key=${this._weatherAPIKey}`);
     }
 
     // Utility function to split cities into chunks

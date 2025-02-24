@@ -2,7 +2,6 @@
 /* qeslint-disable */
 
 import { useEffect } from "react";
-import { useCustomEventListener } from "react-custom-events";
 
 import "@esri/calcite-components/dist/components/calcite-action";
 import "@esri/calcite-components/dist/components/calcite-action-bar";
@@ -25,7 +24,6 @@ import {
     CalciteShellPanel,
     CalciteTooltip
 } from "@esri/calcite-components-react";
-import { Cesium3DTileset } from "cesium";
 import { Toaster } from "react-hot-toast";
 import { useSelector } from "react-redux";
 
@@ -35,7 +33,6 @@ import EvacuationIconSvg from "../assets/side-nav-svgs/Evacuation.svg?react";
 import BasemapIconSvg from "../assets/side-nav-svgs/Basemap.svg?react";
 
 import { GeoTech } from "@core/GeoTech";
-import { GeoTechEventsTypes } from "@core/Events";
 import { DataActionIds } from "./data-action-ids";
 import { GlobalStyles } from "./index.styles";
 import BottomBar from "./bottombar/BottomBar";
@@ -49,7 +46,7 @@ import BasemapPicker from "./basemap-picker/BaseMapPicker";
 import { getWeather } from "../redux";
 import { useActions } from "../hooks/useActions";
 // @ts-ignore
-import mockData from "../../public/data/mock_data.json";
+import mockData from "../data/mock_data.json";
 
 interface GUIProps {
     geoTech: GeoTech;
@@ -59,6 +56,7 @@ interface GUIProps {
 const GUI = ({ geoTech }: GUIProps) => {
     const currentWeather = useSelector(getWeather);
     const { setWeatherData } = useActions();
+    const areManager = geoTech.areaManager;
 
     useEffect(() => {
         geoTech.uiManager.initialize();
@@ -75,25 +73,12 @@ const GUI = ({ geoTech }: GUIProps) => {
     }, []);
 
     useEffect(() => {
-        console.log("currentWeather", currentWeather);
-    }, [currentWeather]);
-
-    useCustomEventListener(GeoTechEventsTypes.BasemapChanged, (name: string) => {
-        if (name === "Google 3d") {
-            const googleAPIKey = import.meta.env.VITE_GOOGLE_API_KEY;
-            const tilesetPromise = Cesium3DTileset.fromUrl(
-                `https://tile.googleapis.com/v1/3dtiles/root.json?key=${googleAPIKey}`
-            );
-
-            tilesetPromise
-                .then((tileset: Cesium3DTileset) => {
-                    geoTech.mapViewer.customTimePrimitive = geoTech.viewer.scene.primitives.add(tileset);
-                })
-                .catch((error: any) => {
-                    console.error(error);
-                });
+        if (currentWeather !== undefined) {
+            currentWeather?.current?.forEach((property) => {
+                areManager.addNewAreaWithProperties(property);
+            });
         }
-    });
+    }, [currentWeather]);
 
     const isMobile = geoTech.isMobile();
 
