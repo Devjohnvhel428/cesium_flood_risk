@@ -4,7 +4,7 @@ interface ImportMetaEnv {
     readonly VITE_CESIUM_TOKEN: string;
     readonly VITE_NODE_ENV: string;
     readonly VITE_WEATHER_API_KEY: string;
-    readonly VITE_USE_MOCKDATA: boolean;
+    readonly VITE_USE_MOCKDATA: string;
 }
 
 interface ImportMeta {

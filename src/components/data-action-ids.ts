@@ -5,7 +5,7 @@ export enum DataActionIds {
     Download = "download",
     Move = "move",
     Add = "add",
-    Entities = "entities",
+    Current = "current",
     Favorite = "favorite",
     Emission = "emission",
     Basemap = "basemap",

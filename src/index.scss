@@ -36,3 +36,7 @@ $navigation-custom-background-color: rgba(255, 255, 255, 0);
     background: rgba(0, 0, 0, 0.5);
     border-radius: 2px;
 }
+
+.cesium-infoBox {
+    z-index: 1000;
+}

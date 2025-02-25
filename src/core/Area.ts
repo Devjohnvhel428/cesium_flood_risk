@@ -50,7 +50,13 @@ export class Area {
 
         let marker = "";
         if (icon) {
-            marker = `https://cdn.weatherbit.io/static/img/icons/${icon}.png`;
+            if (icon === "c01d") {
+                marker = `https://img.icons8.com/?size=48&id=8EUmYhfLPTCF&format=png`;
+            } else if (icon === "c01n") {
+                marker = `https://img.icons8.com/?size=48&id=6DXM8bs2tFSU&format=png`;
+            } else {
+                marker = `https://cdn.weatherbit.io/static/img/icons/${icon}.png`;
+            }
         } else {
             marker = `https://cdn.weatherbit.io/static/img/icons/u00d.png`;
         }

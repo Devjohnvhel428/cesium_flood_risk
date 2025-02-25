@@ -8,6 +8,7 @@ export interface AppState {
 
 export interface Weather {
     current: any[];
+    alerts: any[];
 }
 
 export interface WeatherState {

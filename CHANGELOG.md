@@ -1,5 +1,12 @@
 # Change Log
 
+### 1.0.4 - 2025-02-25
+
+#### Added
+
+-   Added filter and search function for current weather data
+-   Added alert API and mock data
+
 ### 1.0.3 - 2025-02-24
 
 #### Added

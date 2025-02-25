@@ -24,7 +24,7 @@ import {
     CalciteShellPanel,
     CalciteTooltip
 } from "@esri/calcite-components-react";
-import { Toaster } from "react-hot-toast";
+import { ToastContainer, toast } from "react-toastify";
 import { useSelector } from "react-redux";
 
 import WeatherIconSvg from "../assets/side-nav-svgs/Weather.svg?react";
@@ -37,7 +37,7 @@ import { DataActionIds } from "./data-action-ids";
 import { GlobalStyles } from "./index.styles";
 import BottomBar from "./bottombar/BottomBar";
 import GeoTechViewerWrapper from "./GeoTechViewerWrapper";
-import EntitiesLayout from "./sidebar-elements/entities/EntitiesLayout";
+import EntitiesLayout from "./sidebar-elements/entities/CurrentWeatherLayout";
 import FavoritesLayout from "./sidebar-elements/favorites/FavoritesLayout";
 import EmissionLayout from "./sidebar-elements/emission/EmissionLayout";
 import AccountMenu from "./account-menu/AccountMenu";
@@ -46,7 +46,9 @@ import BasemapPicker from "./basemap-picker/BaseMapPicker";
 import { getWeather } from "../redux";
 import { useActions } from "../hooks/useActions";
 // @ts-ignore
-import mockData from "../data/mock_data.json";
+import mockData from "../data/mockData_1.json";
+// @ts-ignore
+import mockAlertData from "../data/mockAlertData_1.json";
 
 interface GUIProps {
     geoTech: GeoTech;
@@ -60,7 +62,7 @@ const GUI = ({ geoTech }: GUIProps) => {
 
     useEffect(() => {
         geoTech.uiManager.initialize();
-        if (!import.meta.env.VITE_USE_MOCKDATA) {
+        if (import.meta.env.VITE_USE_MOCKDATA === "false") {
             let response = null;
             const fetchWeatherData = async () => {
                 response = await geoTech.apiInterface.fetchWeatherForAllCities();
@@ -68,15 +70,31 @@ const GUI = ({ geoTech }: GUIProps) => {
             };
             fetchWeatherData();
         } else {
-            setWeatherData({ current: mockData.data });
+            setWeatherData({ current: mockData.data, alerts: [] });
         }
     }, []);
 
     useEffect(() => {
         if (currentWeather !== undefined) {
+            areManager.cleanAreaList();
             currentWeather?.current?.forEach((property) => {
                 areManager.addNewAreaWithProperties(property);
             });
+            if (currentWeather?.alerts?.length === 0) {
+                if (import.meta.env.VITE_USE_MOCKDATA === "true") {
+                    setWeatherData({ current: mockData.data, alerts: mockAlertData });
+                }
+            } else {
+                let alert_count = 0;
+                currentWeather?.alerts?.forEach((alert) => {
+                    if (alert?.alerts?.length > 0) {
+                        alert_count++;
+                    }
+                });
+                if (alert_count > 0) {
+                    toast.error(`The ${alert_count} flood alerts are sounded!`);
+                }
+            }
         }
     }, [currentWeather]);
 
@@ -102,14 +120,14 @@ const GUI = ({ geoTech }: GUIProps) => {
                 <CalciteShellPanel slot="panel-start" hidden={isMobile}>
                     <CalciteActionBar slot="action-bar" expanded className="calcite-mode-dark">
                         <CalciteAction
-                            id="action-entities"
-                            data-action-id={DataActionIds.Entities}
+                            id="action-current"
+                            data-action-id={DataActionIds.Current}
                             aria-expanded="false"
                             appearance="solid"
                             text="Current"
                         >
                             <WeatherIconSvg />
-                            <CalciteTooltip reference-element="action-entities" closeOnClick={true}>
+                            <CalciteTooltip reference-element="action-current" closeOnClick={true}>
                                 <span>Current Weather</span>
                             </CalciteTooltip>
                         </CalciteAction>
@@ -134,7 +152,13 @@ const GUI = ({ geoTech }: GUIProps) => {
                         </CalciteAction>
                     </CalciteActionBar>
 
-                    <CalcitePanel heading="Entities" data-panel-id={DataActionIds.Entities} closable closed hidden>
+                    <CalcitePanel
+                        heading="Current Weather"
+                        data-panel-id={DataActionIds.Current}
+                        closable
+                        closed
+                        hidden
+                    >
                         <EntitiesLayout />
                     </CalcitePanel>
 
@@ -159,7 +183,7 @@ const GUI = ({ geoTech }: GUIProps) => {
             </CalciteShell>
 
             <AccountMenu />
-            <Toaster position="top-center" />
+            <ToastContainer position="top-right" style={{ fontSize: "12pt" }} />
         </>
     );
 };

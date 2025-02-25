@@ -8,6 +8,7 @@ import {
     Cartesian3,
     defined,
     DeveloperError,
+    Entity,
     HeadingPitchRoll,
     HorizontalOrigin,
     Ion,
@@ -31,7 +32,7 @@ import {
 } from "cesium";
 import viewerCesiumNavigationMixin from "./cesium-navigation-es6/viewerCesiumNavigationMixin";
 import { GeoTech } from "./GeoTech";
-import { defaultHeight } from "./Area";
+import { Area, defaultHeight } from "./Area";
 import { CapturedCameraProps } from "./common";
 
 export class GeoTechMapViewer {
@@ -196,6 +197,7 @@ export class GeoTechMapViewer {
 
             if (!pickedObject) {
                 this._hoverLabel.show = false;
+                this._geoTech.areaManager.dehighlightAll();
                 return;
             }
 
@@ -208,6 +210,7 @@ export class GeoTechMapViewer {
 
             if (!(primitive instanceof Billboard)) {
                 this._hoverLabel.show = false;
+
                 return;
             }
 
@@ -222,7 +225,33 @@ export class GeoTechMapViewer {
             this._hoverLabel.position = Cartesian3.fromDegrees(longitude, latitude, height);
             this._hoverLabel.text = `${area.name} : ${area.geWeatherStatus()}`;
             this._hoverLabel.show = true;
+            area.highlight();
         }, ScreenSpaceEventType.MOUSE_MOVE);
+
+        //Mouse Click for detailed
+        handler.setInputAction((movement: ScreenSpaceEventHandler.PositionedEvent) => {
+            const pickedObject = scene.pick(movement.position);
+            const selectedEntity = new Entity();
+
+            if (!pickedObject) {
+                this._geoTech.areaManager.dehighlightAll();
+                return;
+            }
+
+            if (!pickedObject.primitive) {
+                return;
+            }
+
+            const primitive = pickedObject.primitive;
+
+            if (!(primitive instanceof Billboard)) {
+                return;
+            }
+
+            const id = primitive.id;
+            const area = this._geoTech.areaManager.getAreaByCityName(id);
+            this.showPropertyTable(area);
+        }, ScreenSpaceEventType.LEFT_CLICK);
     }
 
     get viewer() {
@@ -252,5 +281,48 @@ export class GeoTechMapViewer {
         };
 
         return item;
+    }
+
+    getPropertyTable(properties: any) {
+        const propertyTable =
+            `${
+                '<table class="cesium-infoBox-defaultTable"><tbody>' + "<tr><th>City name</th><td>"
+            }${properties?.city_name}</td></tr>` +
+            `<tr><th>Latitude</th><td>${properties?.lat}</td></tr>` +
+            `<tr><th>Longitude</th><td>${properties?.lon}</td></tr>` +
+            `<tr><th>Weather</th><td>${properties?.weather?.description}</td></tr>` +
+            `<tr><th>Visibility - default (M)</th><td>${properties?.vis}</td></tr>` +
+            `<tr><th>Relative humidity</th><td>${properties?.rh}</td></tr>` +
+            `<tr><th>Dew point temperature - default (C)</th><td>${properties?.dewpt}</td></tr>` +
+            `<tr><th>Wind direction (degrees)</th><td>${properties?.wind_dir}</td></tr>` +
+            `<tr><th>Cardinal wind direction</th><td>${properties?.wind_cdir}</td></tr>` +
+            `<tr><th>Cardinal wind direction(text)</th><td>${properties?.wind_cdir_full}</td></tr>` +
+            `<tr><th>Wind speed - Default (m/s)</th><td>${properties?.wind_speed}</td></tr>` +
+            `<tr><th>Wind gust speed - Default (m/s)</th><td>${properties?.gust}</td></tr>` +
+            `<tr><th>Temperature - Default (C)</th><td>${properties?.temp}</td></tr>` +
+            `<tr><th>Apparent temperature - Default (C)</th><td>${properties?.app_temp}</td></tr>` +
+            `<tr><th>Cloud cover (%)</th><td>${properties?.clouds}</td></tr>` +
+            `<tr><th>Full time (UTC) of observation</th><td>${properties?.ob_time}</td></tr>` +
+            `<tr><th>Mean sea level pressure in millibars (mb)</th><td>${properties?.slp}</td></tr>` +
+            `<tr><th>Pressure (mb)</th><td>${properties?.pres}</td></tr>` +
+            `<tr><th>Air quality index (US EPA standard 0 to +500)</th><td>${properties?.aqi}</td></tr>` +
+            `<tr><th>Estimated solar radiation (W/m^2)</th><td>${properties?.solar_rad}</td></tr>` +
+            `<tr><th>Global horizontal irradiance (W/m^2)</th><td>${properties?.ghi}</td></tr>` +
+            `<tr><th>Direct normal irradiance (W/m^2)</th><td>${properties?.dni}</td></tr>` +
+            `<tr><th>Diffuse horizontal irradiance (W/m^2)</th><td>${properties?.dhi}</td></tr>` +
+            `<tr><th>Current solar elevation angle (Degrees)</th><td>${properties?.elev_angle}</td></tr>` +
+            `<tr><th>Current solar hour angle (Degrees)</th><td>${properties?.hour_angle}</td></tr>` +
+            `<tr><th>Part of the day</th><td>${properties?.pod}</td></tr>` +
+            `<tr><th>Precipitation in last hour - Default (mm)</th><td>${properties?.precip}</td></tr>` +
+            `<tr><th>Snowfall in last hour - Default (mm)</th><td>${properties?.snow}</td></tr>` +
+            `</tbody></table>`;
+        return propertyTable;
+    }
+
+    showPropertyTable(area: Area) {
+        const selectedEntity = new Entity();
+        this._viewer.selectedEntity = selectedEntity;
+        /* @ts-ignore */
+        selectedEntity.description = this.getPropertyTable(area.properties);
     }
 }

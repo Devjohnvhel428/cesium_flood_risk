@@ -56,6 +56,48 @@ class APIInterface {
         // Combine all responses into a single result
         return allResponses.flat(); // Flatten the array if needed
     }
+
+    // Function to fetch weather data for a chunk of cities
+    async fetchAlertsForCities(cityChunk) {
+        const queryString = cityChunk.map((city) => city.city_id).join(",");
+        const url = `${this._baseWeatherUrl}alerts?cities=${queryString}&key=${this._weatherAPIKey}`;
+        console.log("url", url);
+        try {
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error(`Error fetching data: ${response.statusText}`);
+            }
+            const data = await response.json();
+        } catch (error) {
+            console.error("Error fetching weather data:", error);
+            return null; // Return null or handle the error as needed
+        }
+    }
+
+    // Main function to fetch weather data for all cities
+    async fetchAlertsAllCities() {
+        const allResponses = [];
+
+        // Sequentially fetch data for each chunk
+        for (const city of cities) {
+            const url = `${this._baseWeatherUrl}alerts?city_id=${city.city_id}&key=${this._weatherAPIKey}`;
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`Error fetching data: ${response.statusText}`);
+                }
+                const data = await response.json();
+                allResponses.push(data);
+            } catch (error) {
+                console.error("Error fetching weather data:", error);
+                return null; // Return null or handle the error as needed
+            }
+        }
+
+        console.log("All", allResponses);
+        // Combine all responses into a single result
+        return allResponses.flat(); // Flatten the array if needed
+    }
 }
 
 export default APIInterface;

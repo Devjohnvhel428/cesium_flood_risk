@@ -1,7 +1,6 @@
 /* qeslint-disable*/
 import { BoundingSphere, Cartesian3, HeadingPitchRange, Event, Math as CesiumMath } from "cesium";
 import { GeoTechViewer } from "./GeoTechViewer";
-import { Site } from "./common";
 import { CanvasEventHandler } from "./CanvasEventHandler";
 import { MapTool } from "./MapTool";
 import { Area } from "./Area";
@@ -122,30 +121,25 @@ export class GeoTech {
         });
     }
 
-    zoomToSite(site: Site) {
-        const viewer = this.viewer;
-
-        viewer.entities.values.forEach((entity) => {
-            if (entity.properties && entity.properties.name && entity.properties.name.getValue() === site.entity_name) {
-                viewer.zoomTo(entity, new HeadingPitchRange(viewer.scene.camera.heading, -0.1, 1000));
-            }
-        });
-    }
-
     zoomToArea(area: Area) {
         const viewer = this.viewer;
         area.showHide(true);
 
-        // Set the default pitch to 0 degrees
-        const pitch = CesiumMath.toRadians(0);
+        // Set the pitch to 90 degrees for a vertical (top-down) view
+        const pitch = CesiumMath.toRadians(-90);
 
-        // Calculate the range to achieve an elevation of 109
-        const targetElevation = 50; // Desired elevation
+        // Calculate a higher range for a city-wide view
+        const targetElevation = 2000; // Adjust this value for a higher elevation suitable for a city
         const poiPosition = area.getPosition(new Cartesian3());
-        const range = targetElevation; // Adjust range based on POI's elevation
+        const range = targetElevation; // Use a larger range for a wider view
 
-        viewer.camera.flyToBoundingSphere(new BoundingSphere(poiPosition, 2), {
-            offset: new HeadingPitchRange(0, pitch, range) // Heading: 0, Pitch: 0, Range: calculated
+        // Fly the camera to the area with a vertical view
+        viewer.camera.flyToBoundingSphere(new BoundingSphere(poiPosition, 2000), {
+            offset: new HeadingPitchRange(0, pitch, range), // Heading: 0, Pitch: -90 (vertical), Range: calculated
+            duration: 2.0, // Optional: Adjust the duration of the camera animation
+            complete: () => {
+                this.mapViewer.showPropertyTable(area);
+            }
         });
     }
 }
