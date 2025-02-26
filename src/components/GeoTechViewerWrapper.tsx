@@ -1,47 +1,30 @@
 // q@ts-nocheck
 /* qeslint-disable */
-import React from "react";
+import { useEffect, useRef } from "react";
 import { GeoTech } from "@core/GeoTech";
 
 type GeoTechViewerWrapperProps = {
     geoTech: GeoTech;
 };
 
-class GeoTechViewerWrapper extends React.Component<GeoTechViewerWrapperProps> {
-    componentWillUnmount() {
-        const { geoTech } = this.props;
+const GeoTechViewerWrapper = ({ geoTech }: GeoTechViewerWrapperProps) => {
+    const containerRef = useRef<HTMLDivElement | null>(null);
 
+    useEffect(() => {
         const geoTechViewer = geoTech.mainViewer;
 
-        if (geoTechViewer.attached) {
-            geoTechViewer.detach();
-        }
-    }
-
-    /**
-     * @argument {HTMLDivElement} container
-     */
-    containerRef = (container: HTMLDivElement | null) => {
-        const { geoTech } = this.props;
-
-        const geoTechViewer = geoTech.mainViewer;
-
-        if (geoTechViewer.attached) {
-            geoTechViewer.detach();
+        if (containerRef.current) {
+            geoTechViewer.attach(containerRef.current);
         }
 
-        if (container !== null) {
-            geoTechViewer.attach(container);
-        }
-    };
+        return () => {
+            if (geoTechViewer.attached) {
+                geoTechViewer.detach();
+            }
+        };
+    }, [geoTech]);
 
-    render() {
-        return (
-            <>
-                <div id="geo-tech-viewer-wrapper" ref={this.containerRef} style={{ width: "100%", height: "100%" }} />
-            </>
-        );
-    }
-}
+    return <div id="geo-tech-viewer-wrapper" ref={containerRef} style={{ width: "100%", height: "100%" }} />;
+};
 
 export default GeoTechViewerWrapper;

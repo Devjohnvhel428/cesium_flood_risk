@@ -5273,8 +5273,8 @@
             "vis": 16,
             "weather": {
                 "icon": "r01d",
-                "description": "Light rain",
-                "code": 500
+                "description": "Heavy rain",
+                "code": 502
             },
             "wind_cdir": "E",
             "wind_cdir_full": "east",
@@ -7297,8 +7297,8 @@
             "vis": 16,
             "weather": {
                 "icon": "r01d",
-                "description": "Light rain",
-                "code": 500
+                "description": "Heavy rain",
+                "code": 502
             },
             "wind_cdir": "ENE",
             "wind_cdir_full": "east-northeast",
@@ -7693,8 +7693,8 @@
             "vis": 16,
             "weather": {
                 "icon": "r01d",
-                "description": "Light rain",
-                "code": 500
+                "description": "Heavy rain",
+                "code": 502
             },
             "wind_cdir": "E",
             "wind_cdir_full": "east",
@@ -9276,9 +9276,9 @@
             "uv": 1,
             "vis": 7,
             "weather": {
-                "code": 500,
+                "code": 502,
                 "icon": "r01d",
-                "description": "Light rain"
+                "description": "Heavy rain"
             },
             "wind_cdir": "NW",
             "wind_cdir_full": "northwest",
@@ -11828,9 +11828,9 @@
             "uv": 3,
             "vis": 16,
             "weather": {
-                "code": 500,
+                "code": 502,
                 "icon": "r01d",
-                "description": "Light rain"
+                "description": "Heavy rain"
             },
             "wind_cdir": "SSE",
             "wind_cdir_full": "south-southeast",
@@ -14235,7 +14235,7 @@
             "ts": 1740097809,
             "uv": 1,
             "vis": 16,
-            "weather": { "icon": "r01d", "description": "Light rain", "code": 500 },
+            "weather": { "icon": "r01d", "description": "Heavy rain", "code": 502 },
             "wind_cdir": "N",
             "wind_cdir_full": "north",
             "wind_dir": 11,

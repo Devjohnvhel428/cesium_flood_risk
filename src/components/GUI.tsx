@@ -1,7 +1,7 @@
 // q@ts-nocheck
 /* qeslint-disable */
 
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import "@esri/calcite-components/dist/components/calcite-action";
 import "@esri/calcite-components/dist/components/calcite-action-bar";
@@ -26,6 +26,7 @@ import {
 } from "@esri/calcite-components-react";
 import { ToastContainer, toast } from "react-toastify";
 import { useSelector } from "react-redux";
+import { emitCustomEvent } from "react-custom-events";
 
 import WeatherIconSvg from "../assets/side-nav-svgs/Weather.svg?react";
 import CalendarIconSvg from "../assets/side-nav-svgs/Calendar.svg?react";
@@ -33,13 +34,14 @@ import EvacuationIconSvg from "../assets/side-nav-svgs/Evacuation.svg?react";
 import BasemapIconSvg from "../assets/side-nav-svgs/Basemap.svg?react";
 
 import { GeoTech } from "@core/GeoTech";
+import { GeoTechEventsTypes } from "@core/Events";
 import { DataActionIds } from "./data-action-ids";
 import { GlobalStyles } from "./index.styles";
 import BottomBar from "./bottombar/BottomBar";
 import GeoTechViewerWrapper from "./GeoTechViewerWrapper";
 import EntitiesLayout from "./sidebar-elements/entities/CurrentWeatherLayout";
 import FavoritesLayout from "./sidebar-elements/favorites/FavoritesLayout";
-import EmissionLayout from "./sidebar-elements/emission/EmissionLayout";
+import EmissionLayout from "./sidebar-elements/emission/EvacuationLayout";
 import AccountMenu from "./account-menu/AccountMenu";
 import MapControlBar from "./map-control-bar/MapControlBar";
 import BasemapPicker from "./basemap-picker/BaseMapPicker";
@@ -58,7 +60,8 @@ interface GUIProps {
 const GUI = ({ geoTech }: GUIProps) => {
     const currentWeather = useSelector(getWeather);
     const { setWeatherData } = useActions();
-    const areManager = geoTech.areaManager;
+    const areaManager = geoTech.areaManager;
+    const [alertSounded, setAlertSounded] = useState(false);
 
     useEffect(() => {
         geoTech.uiManager.initialize();
@@ -71,29 +74,52 @@ const GUI = ({ geoTech }: GUIProps) => {
             fetchWeatherData();
         } else {
             setWeatherData({ current: mockData.data, alerts: [] });
+            areaManager.cleanAreaList();
+            mockData.data?.forEach((property) => {
+                areaManager.addNewAreaWithProperties(property);
+            });
         }
     }, []);
 
     useEffect(() => {
         if (currentWeather !== undefined) {
-            areManager.cleanAreaList();
-            currentWeather?.current?.forEach((property) => {
-                areManager.addNewAreaWithProperties(property);
-            });
             if (currentWeather?.alerts?.length === 0) {
                 if (import.meta.env.VITE_USE_MOCKDATA === "true") {
                     setWeatherData({ current: mockData.data, alerts: mockAlertData });
                 }
             } else {
-                let alert_count = 0;
-                currentWeather?.alerts?.forEach((alert) => {
-                    if (alert?.alerts?.length > 0) {
-                        alert_count++;
+                let alerts = [];
+                let i = 0;
+                const fetchCityInformation = async () => {
+                    for (i = 0; i < currentWeather?.alerts?.length; i++) {
+                        let alert = currentWeather?.alerts[i];
+                        if (alert?.alerts?.length > 0) {
+                            const area = areaManager.getAreaByCityName(alert.city_name);
+                            area.setAlert(alert);
+                            alerts.push(alert);
+                            const city_data = await geoTech.apiInterface.fetchCityData(
+                                alert.city_name,
+                                area.latitude,
+                                area.longitude
+                            );
+                            if (city_data) {
+                                area.minLatitude = Number(city_data.boundingbox[0]);
+                                area.maxLatitude = Number(city_data.boundingbox[1]);
+                                area.minLongitude = Number(city_data.boundingbox[2]);
+                                area.maxLongitude = Number(city_data.boundingbox[3]);
+                                area.drawCityRange();
+                            }
+                        }
                     }
-                });
-                if (alert_count > 0) {
-                    toast.error(`The ${alert_count} flood alerts are sounded!`);
-                }
+                    if (alerts.length > 0) {
+                        areaManager.cleanAlerts();
+                        areaManager.alerts = alerts;
+                        emitCustomEvent(GeoTechEventsTypes.AlertSounded, alerts);
+                        setAlertSounded(true);
+                        toast.error(`The ${alerts.length} flood alerts are sounded!`);
+                    }
+                };
+                fetchCityInformation();
             }
         }
     }, [currentWeather]);
@@ -137,7 +163,12 @@ const GUI = ({ geoTech }: GUIProps) => {
                                 <span>Historical Data</span>
                             </CalciteTooltip>
                         </CalciteAction>
-                        <CalciteAction id="action-emission" data-action-id={DataActionIds.Emission} text="Evacuation">
+                        <CalciteAction
+                            className={alertSounded ? "flood-evacuation" : ""}
+                            id="action-emission"
+                            data-action-id={DataActionIds.Emission}
+                            text="Evacuation"
+                        >
                             <EvacuationIconSvg />
                             <CalciteTooltip reference-element="action-emission" closeOnClick={true}>
                                 <span>Evacuation Routes</span>
@@ -166,7 +197,7 @@ const GUI = ({ geoTech }: GUIProps) => {
                         <FavoritesLayout />
                     </CalcitePanel>
 
-                    <CalcitePanel heading="Emission" data-panel-id={DataActionIds.Emission} closable closed hidden>
+                    <CalcitePanel heading="Evacuation" data-panel-id={DataActionIds.Emission} closable closed hidden>
                         <EmissionLayout />
                     </CalcitePanel>
 

@@ -13,6 +13,11 @@ export enum WeatherType {
     STATE_900 = "Unknown Precipitation"
 }
 
+export enum AlertType {
+    ALERT_000 = "No Alert",
+    ALERT_1000 = "Flood Alert"
+}
+
 export interface InlineWeatherModel {
     icon: string; // Icon code for forecast image display
     code: number; // Weather Condition code

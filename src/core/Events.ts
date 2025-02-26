@@ -1,3 +1,4 @@
 export enum GeoTechEventsTypes {
-    BasemapChanged = "BasemapChanged"
+    BasemapChanged = "BasemapChanged",
+    AlertSounded = "AlertSounded"
 }

@@ -1055,7 +1055,7 @@
     {
         "alerts": [
             {
-                "type": "Flood Advisory",
+                "type": "Flood Warning",
                 "description": "Continuous heavy rainfall caused by a low-pressure area may result in localized flooding in Roxas City, particularly in coastal barangays and urban areas with poor drainage.",
                 "severity": "Warning",
                 "effective_utc": "2019-02-09T02:51:00",
@@ -1499,7 +1499,7 @@
     {
         "alerts": [
             {
-                "type": "Flood Watch",
+                "type": "Flood Warning",
                 "description": "Light to moderate rains due to the Northeast Monsoon may cause minor flooding in Ormoc City, particularly in barangays near creeks and rivers.",
                 "severity": "Warning",
                 "effective_utc": "2019-02-09T02:51:00",

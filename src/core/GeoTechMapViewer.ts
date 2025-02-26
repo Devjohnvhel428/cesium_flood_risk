@@ -223,7 +223,7 @@ export class GeoTechMapViewer {
             const height = defaultHeight;
 
             this._hoverLabel.position = Cartesian3.fromDegrees(longitude, latitude, height);
-            this._hoverLabel.text = `${area.name} : ${area.geWeatherStatus()}`;
+            this._hoverLabel.text = `${area.name} : ${area.getWeatherStatus()}`;
             this._hoverLabel.show = true;
             area.highlight();
         }, ScreenSpaceEventType.MOUSE_MOVE);

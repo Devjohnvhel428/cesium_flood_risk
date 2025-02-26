@@ -1,5 +1,12 @@
 # Change Log
 
+### 1.0.5 - 2025-02-26
+
+#### Added
+
+-   Added alert UI and billboards
+-   Integraged OpenStreetMap API for alert range
+
 ### 1.0.4 - 2025-02-25
 
 #### Added

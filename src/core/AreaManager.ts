@@ -4,6 +4,7 @@
 /* eslint-disable import/no-cycle */
 import {
     BillboardCollection,
+    EntityCollection,
     BlendOption,
     Cartesian2,
     Event,
@@ -29,7 +30,11 @@ export class AreaManager {
 
     private _areaList: Area[];
 
+    private _alerts: any[];
+
     private _billboardCollection: BillboardCollection;
+
+    private _entityCollection: EntityCollection;
 
     private _filters: WeatherType[];
 
@@ -52,7 +57,11 @@ export class AreaManager {
             blendOption: BlendOption.OPAQUE_AND_TRANSLUCENT
         });
 
+        this._entityCollection = new EntityCollection();
+
         options.scene.primitives.add(this._billboardCollection);
+
+        this._geoTech.viewer.entities.add(this._entityCollection);
 
         this._filters = [];
 
@@ -77,6 +86,14 @@ export class AreaManager {
 
     get filters() {
         return this._filters;
+    }
+
+    get alerts() {
+        return this._alerts;
+    }
+
+    set alerts(alerts: any) {
+        this._alerts = alerts;
     }
 
     addNewAreaWithProperties(properties: any) {
@@ -107,11 +124,13 @@ export class AreaManager {
     }
 
     cleanAreaList() {
-        this._areaList.forEach((poiList) => {
-            // poiList.clearPrimitives();
-        });
         this._areaList = [];
         this._areaList = [];
+    }
+
+    cleanAlerts() {
+        this._alerts = [];
+        this._alerts = [];
     }
 
     getAreaByCityName(name: string) {
