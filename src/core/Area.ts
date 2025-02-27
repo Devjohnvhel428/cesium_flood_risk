@@ -6,7 +6,6 @@ import {
     Color,
     DistanceDisplayCondition,
     Entity,
-    EntityCollection,
     Event,
     Math as CesiumMath,
     PolygonHierarchy
@@ -21,7 +20,7 @@ interface WeatherConstructorOptions {
     billboardCollection: BillboardCollection;
 }
 
-export const defaultHeight = 10;
+export const defaultHeight = 100;
 export class Area {
     private _longitude: number; // in degree
 
@@ -216,14 +215,28 @@ export class Area {
     }
 
     drawCityRange() {
-        const radius = this.getRadius(this._minLongitude, this._minLatitude, this._maxLongitude, this._maxLatitude, 0);
-        const circlePositions = Cartesian3.fromDegreesArray(
-            this.generateCirclePoints(this._longitude, this._latitude, radius)
-        );
         const geoTech = window.geoTech;
+
+        // Initial radius and animation parameters
+        let baseRadius = this.getRadius(
+            this._minLongitude,
+            this._minLatitude,
+            this._maxLongitude,
+            this._maxLatitude,
+            0
+        );
+        let radius = baseRadius;
+
+        // Function to generate circle positions based on radius
+        const generateCirclePositions = (radius) => {
+            return Cartesian3.fromDegreesArray(this.generateCirclePoints(this._longitude, this._latitude, radius));
+        };
+
+        // Add the initial circle entity
         this.cityRange = geoTech.viewer.entities.add({
+            id: this._properties.id,
             polygon: {
-                hierarchy: new PolygonHierarchy(circlePositions),
+                hierarchy: new PolygonHierarchy(generateCirclePositions(radius)),
                 material: Color.RED.withAlpha(0.1), // Semi-transparent red
                 outline: true,
                 outlineColor: Color.RED,

@@ -30,7 +30,19 @@ export const EvacuationLayoutContainer = styled.div<EvacuationLayoutExpandedProp
         height: 100%;
         width: auto;
         background-color: ${(props) => (props.$light ? lmColorWhiteOne : dmColorGreyFive)};
-
         padding: 0.2rem;
+
+        .tree-panel {
+            max-height: 500px;
+            overflow-y: auto;
+            border: 1px solid ${dmColorGreyOne};
+        }
+
+        .btn-panel {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
     }
 `;

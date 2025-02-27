@@ -1,5 +1,12 @@
 # Change Log
 
+### 1.0.6 - 2025-02-27
+
+#### Added
+
+-   Added fly over function of alert areas
+-   Added discrict map from GeoJSON
+
 ### 1.0.5 - 2025-02-26
 
 #### Added

@@ -9,6 +9,7 @@ import {
     defined,
     DeveloperError,
     Entity,
+    GeoJsonDataSource,
     HeadingPitchRoll,
     HorizontalOrigin,
     Ion,
@@ -28,12 +29,14 @@ import {
     ScreenSpaceEventType,
     VerticalOrigin,
     Viewer,
-    Color
+    Color,
+    ColorMaterialProperty
 } from "cesium";
 import viewerCesiumNavigationMixin from "./cesium-navigation-es6/viewerCesiumNavigationMixin";
 import { GeoTech } from "./GeoTech";
 import { Area, defaultHeight } from "./Area";
 import { CapturedCameraProps } from "./common";
+// @ts-ignore
 
 export class GeoTechMapViewer {
     private readonly _geoTech: GeoTech;
@@ -168,6 +171,19 @@ export class GeoTechMapViewer {
 
             viewerCesiumNavigationMixin(viewer, options);
         }
+
+        const geoJsonUrl = "/data/county.json";
+
+        this.addGeoJsonDataSourceWithPopulationColor(geoJsonUrl)
+            .then(function (dataSource) {
+                viewer.dataSources.add(dataSource);
+                dataSource.entities.values.forEach(function (entity) {
+                    entity.polygon.minimumPixelSize = 10;
+                });
+            })
+            .catch(function (error) {
+                console.error("An error occurred: ", error);
+            });
 
         const labelCollection = new LabelCollection({
             blendOption: BlendOption.OPAQUE_AND_TRANSLUCENT
@@ -324,5 +340,18 @@ export class GeoTechMapViewer {
         this._viewer.selectedEntity = selectedEntity;
         /* @ts-ignore */
         selectedEntity.description = this.getPropertyTable(area.properties);
+    }
+
+    addGeoJsonDataSourceWithPopulationColor(url) {
+        let dataSource = null;
+        return GeoJsonDataSource.load(url).then(function (loadedDataSource) {
+            dataSource = loadedDataSource;
+            const entities = dataSource.entities.values;
+
+            entities.forEach(function (entity) {
+                entity.polygon.material = new ColorMaterialProperty(new Color(0.0, 0.0, 1.0, 0.05));
+            });
+            return dataSource;
+        });
     }
 }

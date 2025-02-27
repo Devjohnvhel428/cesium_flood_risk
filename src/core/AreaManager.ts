@@ -4,13 +4,13 @@
 /* eslint-disable import/no-cycle */
 import {
     BillboardCollection,
-    EntityCollection,
     BlendOption,
     Cartesian2,
     Event,
     Scene,
     ScreenSpaceEventHandler,
-    ScreenSpaceEventType
+    ScreenSpaceEventType,
+    PrimitiveCollection
 } from "cesium";
 import { GeoJsonGeometryTypes, Point } from "geojson";
 
@@ -34,8 +34,6 @@ export class AreaManager {
 
     private _billboardCollection: BillboardCollection;
 
-    private _entityCollection: EntityCollection;
-
     private _filters: WeatherType[];
 
     private _currentArea: Area;
@@ -57,11 +55,7 @@ export class AreaManager {
             blendOption: BlendOption.OPAQUE_AND_TRANSLUCENT
         });
 
-        this._entityCollection = new EntityCollection();
-
         options.scene.primitives.add(this._billboardCollection);
-
-        this._geoTech.viewer.entities.add(this._entityCollection);
 
         this._filters = [];
 
