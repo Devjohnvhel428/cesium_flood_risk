@@ -28,18 +28,18 @@ import { ToastContainer, toast } from "react-toastify";
 import { useSelector } from "react-redux";
 import { emitCustomEvent } from "react-custom-events";
 
+import { GGITech } from "@core/GGITech";
+import { GGITechEventsTypes } from "@core/Events";
 import WeatherIconSvg from "../assets/side-nav-svgs/Weather.svg?react";
 import EvacuationIconSvg from "../assets/side-nav-svgs/Evacuation.svg?react";
 import BasemapIconSvg from "../assets/side-nav-svgs/Basemap.svg?react";
 
-import { GGITech } from "@core/GGITech";
-import { GGITechEventsTypes } from "@core/Events";
 import { DataActionIds } from "./data-action-ids";
 import { GlobalStyles } from "./index.styles";
 import BottomBar from "./bottombar/BottomBar";
 import GGITechViewerWrapper from "./GGITechViewerWrapper";
-import CurrentWeatherLayout from "./sidebar-elements/entities/CurrentWeatherLayout";
-import EvacuationLayout from "./sidebar-elements/emission/EvacuationLayout";
+import CurrentWeatherLayout from "./sidebar-elements/current/CurrentWeatherLayout";
+import EvacuationLayout from "./sidebar-elements/evacuation/EvacuationLayout";
 import MapControlBar from "./map-control-bar/MapControlBar";
 import BasemapPicker from "./basemap-picker/BaseMapPicker";
 import { getWeather } from "../redux";
@@ -54,7 +54,6 @@ interface GUIProps {
     ggiTech: GGITech;
 }
 
-// eslint-disable-next-line arrow-body-style
 const GUI = ({ ggiTech }: GUIProps) => {
     const currentWeather = useSelector(getWeather);
     const { setWeatherData } = useActions();
@@ -88,25 +87,26 @@ const GUI = ({ ggiTech }: GUIProps) => {
                     setWeatherData({ current: mockData.data, alerts: mockAlertData });
                 }
             } else {
-                let alerts = [];
+                const alerts = [];
                 let i = 0;
                 const fetchCityInformation = async () => {
                     for (i = 0; i < currentWeather?.alerts?.length; i++) {
-                        let alert = currentWeather?.alerts[i];
+                        const alert = currentWeather?.alerts[i];
                         if (alert?.alerts?.length > 0) {
                             const area = areaManager.getAreaByCityName(alert.city_name);
                             area.setAlert(alert);
                             alerts.push(alert);
-                            const city_data = await ggiTech.apiInterface.fetchCityData(
+                            /* eslint-disable-next-line  no-await-in-loop */
+                            const cityData = await ggiTech.apiInterface.fetchCityData(
                                 alert.city_name,
                                 area.latitude,
                                 area.longitude
                             );
-                            if (city_data) {
-                                area.minLatitude = Number(city_data.boundingbox[0]);
-                                area.maxLatitude = Number(city_data.boundingbox[1]);
-                                area.minLongitude = Number(city_data.boundingbox[2]);
-                                area.maxLongitude = Number(city_data.boundingbox[3]);
+                            if (cityData) {
+                                area.minLatitude = Number(cityData.boundingbox[0]);
+                                area.maxLatitude = Number(cityData.boundingbox[1]);
+                                area.minLongitude = Number(cityData.boundingbox[2]);
+                                area.maxLongitude = Number(cityData.boundingbox[3]);
                                 area.drawCityRange();
                             }
                         }
@@ -132,17 +132,12 @@ const GUI = ({ ggiTech }: GUIProps) => {
             <FullScreenLoader isLoading={isLoading} />
             <CalciteShell contentBehind>
                 <CalciteNavigation slot="header">
-                    <CalciteNavigationLogo
-                        id="header-title"
-                        heading="GGI"
-                        heading-level="1"
-                        slot="logo"
-                    ></CalciteNavigationLogo>
+                    <CalciteNavigationLogo id="header-title" heading="GGI" heading-level="1" slot="logo" />
                     <CalciteNavigationUser
                         slot="user"
                         full-name={import.meta.env.VITE_USER_EMAIL}
                         username={import.meta.env.VITE_USER_NAME}
-                    ></CalciteNavigationUser>
+                    />
                 </CalciteNavigation>
 
                 <CalciteShellPanel slot="panel-start" hidden={isMobile}>
@@ -155,25 +150,25 @@ const GUI = ({ ggiTech }: GUIProps) => {
                             text="Current"
                         >
                             <WeatherIconSvg />
-                            <CalciteTooltip reference-element="action-current" closeOnClick={true}>
+                            <CalciteTooltip reference-element="action-current" closeOnClick>
                                 <span>Current Weather</span>
                             </CalciteTooltip>
                         </CalciteAction>
                         <CalciteAction
                             className={alertSounded ? "flood-evacuation" : ""}
                             id="action-emission"
-                            data-action-id={DataActionIds.Emission}
+                            data-action-id={DataActionIds.Evacuation}
                             text="Evacuation"
                         >
                             <EvacuationIconSvg />
-                            <CalciteTooltip reference-element="action-emission" closeOnClick={true}>
+                            <CalciteTooltip reference-element="action-emission" closeOnClick>
                                 <span>Evacuation Routes</span>
                             </CalciteTooltip>
                         </CalciteAction>
 
                         <CalciteAction id="action-basemap" data-action-id={DataActionIds.Basemap} text="Basemap">
                             <BasemapIconSvg />
-                            <CalciteTooltip reference-element="action-basemap" closeOnClick={true}>
+                            <CalciteTooltip reference-element="action-basemap" closeOnClick>
                                 <span>Basemap</span>
                             </CalciteTooltip>
                         </CalciteAction>
@@ -189,7 +184,7 @@ const GUI = ({ ggiTech }: GUIProps) => {
                         <CurrentWeatherLayout />
                     </CalcitePanel>
 
-                    <CalcitePanel heading="Evacuation" data-panel-id={DataActionIds.Emission} closable closed hidden>
+                    <CalcitePanel heading="Evacuation" data-panel-id={DataActionIds.Evacuation} closable closed hidden>
                         <EvacuationLayout />
                     </CalcitePanel>
 

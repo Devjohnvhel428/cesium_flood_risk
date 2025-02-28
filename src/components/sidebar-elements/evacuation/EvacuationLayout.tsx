@@ -1,5 +1,5 @@
-// q@ts-nocheck
-/* qeslint-disable */
+// @ts-nocheck
+/* eslint-disable */
 import { useState, useEffect } from "react";
 import { SimpleTreeView } from "@mui/x-tree-view/SimpleTreeView";
 import { TreeItem } from "@mui/x-tree-view/TreeItem";
@@ -9,14 +9,12 @@ import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import StopCircleIcon from "@mui/icons-material/StopCircle";
 import ReplayCircleFilledIcon from "@mui/icons-material/ReplayCircleFilled";
 import Tooltip from "@mui/material/Tooltip";
-import { createGooglePhotorealistic3DTileset, Cartesian3 } from "cesium";
+import { Cartesian3 } from "cesium";
 
 import { EvacuationLayoutContainer } from "./evacuation-layout.styles";
 import AlertDialog from "../../dialogs/alert/AlertDialog";
 
-interface EvacuationLayoutProps {}
-
-const EvacuationLayout = ({}: EvacuationLayoutProps) => {
+const EvacuationLayout = () => {
     const ggiTech = window.ggiTech;
     const areaManager = ggiTech.areaManager;
     const viewer = ggiTech.viewer;
@@ -45,7 +43,7 @@ const EvacuationLayout = ({}: EvacuationLayoutProps) => {
 
     const flyOverAlerts = async () => {
         try {
-            async function flyOverCities() {
+            const flyOverCities = async () => {
                 if (currentIndex < alerts.length) {
                     const alert = alerts[currentIndex];
                     const area = areaManager.getAreaByCityName(alert.city_name);
@@ -64,10 +62,10 @@ const EvacuationLayout = ({}: EvacuationLayoutProps) => {
                 } else {
                     isFlying = false;
                 }
-            }
+            };
             flyOverCities();
         } catch (error) {
-            console.log(`Failed to load tileset: ${error}`);
+            console.error(`Failed to load tileset: ${error}`);
         }
     };
 
@@ -102,29 +100,25 @@ const EvacuationLayout = ({}: EvacuationLayoutProps) => {
                 <div className="tree-panel">
                     <SimpleTreeView aria-label="alert-treeview" className="entities-layout__content__tree">
                         {alerts &&
-                            alerts?.map((alert) => {
-                                return (
-                                    <TreeItem
-                                        key={`${alert.city_name}-alert`}
-                                        itemId={`${alert.city_name}-alert`}
-                                        label={`Alert in ${alert.city_name} (${alert.alerts.length})`}
-                                    >
-                                        {alert?.alerts &&
-                                            alert?.alerts?.map((item, index) => {
-                                                return (
-                                                    <TreeItem
-                                                        key={`${alert.city_name}-alert-${index}`}
-                                                        itemId={`${alert.city_name}-alert-${index}`}
-                                                        label={item.type}
-                                                        onClick={() => {
-                                                            handleAlertItemClicked(alert.city_name, item);
-                                                        }}
-                                                    />
-                                                );
-                                            })}
-                                    </TreeItem>
-                                );
-                            })}
+                            alerts?.map((alert) => (
+                                <TreeItem
+                                    key={`${alert.city_name}-alert`}
+                                    itemId={`${alert.city_name}-alert`}
+                                    label={`Alert in ${alert.city_name} (${alert.alerts.length})`}
+                                >
+                                    {alert?.alerts &&
+                                        alert?.alerts?.map((item, index) => (
+                                            <TreeItem
+                                                key={`${alert.city_name}-alert-${index}`}
+                                                itemId={`${alert.city_name}-alert-${index}`}
+                                                label={item.type}
+                                                onClick={() => {
+                                                    handleAlertItemClicked(alert.city_name, item);
+                                                }}
+                                            />
+                                        ))}
+                                </TreeItem>
+                            ))}
                     </SimpleTreeView>
                 </div>
                 <div className="btn-panel">

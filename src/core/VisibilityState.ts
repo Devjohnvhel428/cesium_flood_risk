@@ -7,6 +7,7 @@ import { Cesium3DTileset, ManagedArray, Model, PrimitiveCollection, Scene } from
 
 class VisibilityState {
     states: ManagedArray;
+
     count: number;
 
     constructor() {

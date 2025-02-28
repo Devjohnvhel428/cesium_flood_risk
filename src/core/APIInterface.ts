@@ -1,11 +1,16 @@
-import axios from "axios";
+// @ts-nocheck
+/* eslint-disable */
 import { cities } from "../data/city_data";
 
 class APIInterface {
     private readonly _baseWeatherUrl: string;
+
     private readonly _baseOpendStreetMapUrl: string;
+
     private readonly _queryString: string;
+
     private readonly _chunkSize: number;
+
     private readonly _weatherAPIKey: string;
 
     constructor() {

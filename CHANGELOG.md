@@ -1,5 +1,13 @@
 # Change Log
 
+### 1.0.9 - 2025-03-01
+
+#### Removed & Updated
+
+-   Removed unnecessary classes and clear the code
+-   Added copy.env file
+-   Added husky for checking lint bugs while pushing
+
 ### 1.0.8 - 2025-02-28
 
 #### Added & Updated

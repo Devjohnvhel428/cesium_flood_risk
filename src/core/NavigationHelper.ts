@@ -1,3 +1,5 @@
+/* eslint-disable class-methods-use-this */
+/* eslint-disable no-case-declarations */
 import {
     Cartesian3,
     Cartographic,
@@ -122,6 +124,7 @@ class NavigationHelper {
         }
 
         if (!defined(result)) {
+            // eslint-disable-next-line no-param-reassign
             result = new Cartesian3();
         }
 
@@ -129,11 +132,11 @@ class NavigationHelper {
         // TODO bug when tracking: reset should reset to default view of tracked entity
 
         if (defined(viewer.trackedEntity)) {
-            result = viewer.trackedEntity.position.getValue(viewer.clock.currentTime, result);
+            viewer.trackedEntity.position.getValue(viewer.clock.currentTime, result);
         } else {
             rayScratch.origin = camera.positionWC;
             rayScratch.direction = camera.directionWC;
-            result = scene.globe.pick(rayScratch, scene, result);
+            scene.globe.pick(rayScratch, scene, result);
         }
 
         if (!defined(result)) {
@@ -141,18 +144,16 @@ class NavigationHelper {
         }
 
         if (scene.mode === SceneMode.SCENE2D || scene.mode === SceneMode.COLUMBUS_VIEW) {
-            result = camera.worldToCameraCoordinatesPoint(result, result);
+            camera.worldToCameraCoordinatesPoint(result, result);
 
             if (inWorldCoordinates) {
-                result = scene.globe.ellipsoid.cartographicToCartesian(
+                scene.globe.ellipsoid.cartographicToCartesian(
                     scene.mapProjection.unproject(result, unprojectedScratch),
                     result
                 );
             }
-        } else {
-            if (!inWorldCoordinates) {
-                result = camera.worldToCameraCoordinatesPoint(result, result);
-            }
+        } else if (!inWorldCoordinates) {
+            camera.worldToCameraCoordinatesPoint(result, result);
         }
 
         return result;

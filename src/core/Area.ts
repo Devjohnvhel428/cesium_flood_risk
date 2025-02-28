@@ -1,3 +1,4 @@
+/* eslint-disable class-methods-use-this */
 import {
     Billboard,
     BillboardCollection,
@@ -61,15 +62,17 @@ export class Area {
 
         this._longitude = longitude;
         this._latitude = latitude;
-        this._minLatitude = this._maxLatitude = latitude;
-        this._minLongitude = this._maxLongitude = longitude;
+        this._minLatitude = latitude;
+        this._maxLatitude = latitude;
+        this._minLongitude = longitude;
+        this._maxLongitude = longitude;
 
         this._cameraProps = null;
 
         const code = options.properties?.weather?.code;
         if (code) {
-            const type_key = `STATE_${code}` as keyof typeof WeatherType;
-            this._type = WeatherType[type_key];
+            const typeKey = `STATE_${code}` as keyof typeof WeatherType;
+            this._type = WeatherType[typeKey];
         } else {
             this._type = WeatherType.STATE_900;
         }
@@ -218,25 +221,20 @@ export class Area {
         const ggiTech = window.ggiTech;
 
         // Initial radius and animation parameters
-        let baseRadius = this.getRadius(
+        const baseRadius = this.getRadius(
             this._minLongitude,
             this._minLatitude,
             this._maxLongitude,
             this._maxLatitude,
             0
         );
-        let radius = baseRadius;
-
-        // Function to generate circle positions based on radius
-        const generateCirclePositions = (radius) => {
-            return Cartesian3.fromDegreesArray(this.generateCirclePoints(this._longitude, this._latitude, radius));
-        };
+        const radius = baseRadius;
 
         // Add the initial circle entity
         this.cityRange = ggiTech.viewer.entities.add({
             id: this._properties.id,
             polygon: {
-                hierarchy: new PolygonHierarchy(generateCirclePositions(radius)),
+                hierarchy: new PolygonHierarchy(this.generateCirclePositions(radius)),
                 material: Color.RED.withAlpha(0.1), // Semi-transparent red
                 outline: true,
                 outlineColor: Color.RED,
@@ -256,6 +254,10 @@ export class Area {
         }
         return positions;
     }
+
+    // Function to generate circle positions based on radius
+    generateCirclePositions = (rad) =>
+        Cartesian3.fromDegreesArray(this.generateCirclePoints(this._longitude, this._latitude, rad));
 
     getRadius(minX, minY, maxX, maxY, height = 0) {
         const minCartesian = Cartesian3.fromDegrees(minX, minY, height);

@@ -1,16 +1,6 @@
-/* eslint-disable class-methods-use-this */
-
 /* eslint-disable no-continue */
 /* eslint-disable import/no-cycle */
-import {
-    BillboardCollection,
-    BlendOption,
-    Cartesian2,
-    Event,
-    Scene,
-    ScreenSpaceEventHandler,
-    ScreenSpaceEventType
-} from "cesium";
+import { BillboardCollection, BlendOption, Event, Scene } from "cesium";
 import { GeoJsonGeometryTypes, Point } from "geojson";
 
 import { GGITech } from "./GGITech";
@@ -43,12 +33,6 @@ export class AreaManager {
         this._ggiTech = options.ggiTech;
         this._areaList = [];
         this._scene = options.scene;
-
-        const handler = new ScreenSpaceEventHandler(this._scene.canvas);
-
-        handler.setInputAction((movement: { position: Cartesian2 }) => {
-            // this.selectPOI(movement.position);
-        }, ScreenSpaceEventType.LEFT_CLICK);
 
         this._billboardCollection = new BillboardCollection({
             blendOption: BlendOption.OPAQUE_AND_TRANSLUCENT
@@ -152,7 +136,7 @@ export class AreaManager {
         if (type === WeatherType.STATE_200) {
             for (let i = 0; i < this._areaList.length; i++) {
                 const area = this._areaList[i];
-                const code = Number(area.properties?.weather?.code) | 0;
+                const code = Number(area.properties?.weather?.code) || 0;
                 if (code >= 200 && code < 300) {
                     continue;
                 } else {
@@ -165,7 +149,7 @@ export class AreaManager {
         if (type === WeatherType.STATE_300) {
             for (let i = 0; i < this._areaList.length; i++) {
                 const area = this._areaList[i];
-                const code = Number(area.properties?.weather?.code) | 0;
+                const code = Number(area.properties?.weather?.code) || 0;
                 if (code >= 300 && code < 400) {
                     continue;
                 } else {
@@ -178,7 +162,7 @@ export class AreaManager {
         if (type === WeatherType.STATE_500) {
             for (let i = 0; i < this._areaList.length; i++) {
                 const area = this._areaList[i];
-                const code = Number(area.properties?.weather?.code) | 0;
+                const code = Number(area.properties?.weather?.code) || 0;
                 if (code >= 500 && code < 600) {
                     continue;
                 } else {
@@ -191,7 +175,7 @@ export class AreaManager {
         if (type === WeatherType.STATE_600) {
             for (let i = 0; i < this._areaList.length; i++) {
                 const area = this._areaList[i];
-                const code = Number(area.properties?.weather?.code) | 0;
+                const code = Number(area.properties?.weather?.code) || 0;
                 if (code >= 600 && code < 700) {
                     continue;
                 } else {
@@ -204,7 +188,7 @@ export class AreaManager {
         if (type === WeatherType.STATE_700) {
             for (let i = 0; i < this._areaList.length; i++) {
                 const area = this._areaList[i];
-                const code = Number(area.properties?.weather?.code) | 0;
+                const code = Number(area.properties?.weather?.code) || 0;
                 if (code >= 700 && code < 800) {
                     continue;
                 } else {
@@ -217,7 +201,7 @@ export class AreaManager {
         if (type === WeatherType.STATE_800) {
             for (let i = 0; i < this._areaList.length; i++) {
                 const area = this._areaList[i];
-                const code = Number(area.properties?.weather?.code) | 0;
+                const code = Number(area.properties?.weather?.code) || 0;
                 if (code !== 800) {
                     area.showHide(false);
                 }
@@ -228,7 +212,7 @@ export class AreaManager {
         if (type === WeatherType.STATE_801) {
             for (let i = 0; i < this._areaList.length; i++) {
                 const area = this._areaList[i];
-                const code = Number(area.properties?.weather?.code) | 0;
+                const code = Number(area.properties?.weather?.code) || 0;
                 if (code >= 801 && code < 900) {
                     continue;
                 } else {
@@ -241,12 +225,11 @@ export class AreaManager {
         if (type === WeatherType.STATE_900) {
             for (let i = 0; i < this._areaList.length; i++) {
                 const area = this._areaList[i];
-                const code = Number(area.properties?.weather?.code) | 0;
+                const code = Number(area.properties?.weather?.code) || 0;
                 if (code !== 900) {
                     area.showHide(false);
                 }
             }
-            return;
         }
     }
 

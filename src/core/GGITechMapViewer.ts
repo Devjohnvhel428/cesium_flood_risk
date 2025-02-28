@@ -1,5 +1,10 @@
 // qts-nocheck
 /* qeslint-disable */
+/* qeslint-disable */
+
+/* eslint-disable import/no-cycle */
+/* eslint-disable class-methods-use-this */
+/* eslint-disable no-useless-concat */
 import {
     Billboard,
     BlendOption,
@@ -175,13 +180,13 @@ export class GGITechMapViewer {
         const geoJsonUrl = "/data/county.json";
 
         this.addGeoJsonDataSource(geoJsonUrl)
-            .then(function (dataSource) {
+            .then((dataSource) => {
                 viewer.dataSources.add(dataSource);
-                dataSource.entities.values.forEach(function (entity) {
+                dataSource.entities.values.forEach((entity) => {
                     entity.polygon.minimumPixelSize = 10;
                 });
             })
-            .catch(function (error) {
+            .catch((error) => {
                 console.error("An error occurred: ", error);
             });
 
@@ -244,10 +249,9 @@ export class GGITechMapViewer {
             area.highlight();
         }, ScreenSpaceEventType.MOUSE_MOVE);
 
-        //Mouse Click for detailed
+        // Mouse Click for detailed
         handler.setInputAction((movement: ScreenSpaceEventHandler.PositionedEvent) => {
             const pickedObject = scene.pick(movement.position);
-            const selectedEntity = new Entity();
 
             if (!pickedObject) {
                 this._ggiTech.areaManager.dehighlightAll();
@@ -344,11 +348,11 @@ export class GGITechMapViewer {
 
     addGeoJsonDataSource(url) {
         let dataSource = null;
-        return GeoJsonDataSource.load(url).then(function (loadedDataSource) {
+        return GeoJsonDataSource.load(url).then((loadedDataSource) => {
             dataSource = loadedDataSource;
             const entities = dataSource.entities.values;
 
-            entities.forEach(function (entity) {
+            entities.forEach((entity) => {
                 entity.polygon.material = new ColorMaterialProperty(new Color(0.0, 0.0, 1.0, 0.05));
             });
             return dataSource;
