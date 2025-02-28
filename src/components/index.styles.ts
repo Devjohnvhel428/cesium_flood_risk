@@ -1,7 +1,6 @@
 // q@ts-nocheck
 /* qeslint-disable */
 import { createGlobalStyle } from "styled-components";
-import { lmColorWhiteOne, dmColorGreyTen } from "./gui-variables.styles";
 
 interface GlobalStylesProps {
     light?: boolean;

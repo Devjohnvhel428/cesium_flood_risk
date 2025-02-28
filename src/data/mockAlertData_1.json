@@ -1,0 +1,4016 @@
+[
+    {
+        "alerts": [],
+        "city_name": "Virac",
+        "country_code": "PH",
+        "lat": 13.5848,
+        "lon": 124.2374,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Sitangkai",
+        "country_code": "PH",
+        "lat": 4.66115,
+        "lon": 119.39647,
+        "state_code": "14",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Sablayan",
+        "country_code": "PH",
+        "lat": 12.8346,
+        "lon": 120.769,
+        "state_code": "41",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Recodo",
+        "country_code": "PH",
+        "lat": 6.95194,
+        "lon": 121.96361,
+        "state_code": "09",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Pacol",
+        "country_code": "PH",
+        "lat": 10.45,
+        "lon": 122.81667,
+        "state_code": "06",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Mercedes",
+        "country_code": "PH",
+        "lat": 14.1093,
+        "lon": 123.0109,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Mariano",
+        "country_code": "PH",
+        "lat": 8.83333,
+        "lon": 125.11667,
+        "state_code": "10",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Mansalay",
+        "country_code": "PH",
+        "lat": 12.52044,
+        "lon": 121.43851,
+        "state_code": "41",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Malita",
+        "country_code": "PH",
+        "lat": 6.415,
+        "lon": 125.61167,
+        "state_code": "11",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Limay",
+        "country_code": "PH",
+        "lat": 14.56194,
+        "lon": 120.59833,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Liloan",
+        "country_code": "PH",
+        "lat": 10.3991,
+        "lon": 123.9992,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Laoang",
+        "country_code": "PH",
+        "lat": 12.5698,
+        "lon": 125.0141,
+        "state_code": "08",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Dipolog",
+        "country_code": "PH",
+        "lat": 8.56697,
+        "lon": 123.33471,
+        "state_code": "09",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Dapitan",
+        "country_code": "PH",
+        "lat": 8.6561,
+        "lon": 123.4227,
+        "state_code": "09",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Cordova",
+        "country_code": "PH",
+        "lat": 10.24394,
+        "lon": 123.94222,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Baybay",
+        "country_code": "PH",
+        "lat": 10.6785,
+        "lon": 124.8006,
+        "state_code": "08",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Balamban",
+        "country_code": "PH",
+        "lat": 10.5039,
+        "lon": 123.7156,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bacoor",
+        "country_code": "PH",
+        "lat": 14.45903,
+        "lon": 120.92903,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Tanza",
+        "country_code": "PH",
+        "lat": 14.6753,
+        "lon": 120.9389,
+        "state_code": "NCR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Zamboanga",
+        "country_code": "PH",
+        "lat": 6.91028,
+        "lon": 122.07389,
+        "state_code": "09",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Wao",
+        "country_code": "PH",
+        "lat": 7.68333,
+        "lon": 124.66667,
+        "state_code": "14",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Vigan",
+        "country_code": "PH",
+        "lat": 17.57472,
+        "lon": 120.38694,
+        "state_code": "01",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Victorias",
+        "country_code": "PH",
+        "lat": 10.90154,
+        "lon": 123.0705,
+        "state_code": "NIR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Victoria",
+        "country_code": "PH",
+        "lat": 14.2277,
+        "lon": 121.3292,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Veruela",
+        "country_code": "PH",
+        "lat": 8.0731,
+        "lon": 125.9558,
+        "state_code": "13",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Valencia",
+        "country_code": "PH",
+        "lat": 7.90639,
+        "lon": 125.09417,
+        "state_code": "10",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Urdaneta",
+        "country_code": "PH",
+        "lat": 15.97611,
+        "lon": 120.57111,
+        "state_code": "01",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Ualog",
+        "country_code": "PH",
+        "lat": 10.57396,
+        "lon": 123.3933,
+        "state_code": "NIR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Tupi",
+        "country_code": "PH",
+        "lat": 6.33444,
+        "lon": 124.95278,
+        "state_code": "11",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Tuguegarao",
+        "country_code": "PH",
+        "lat": 17.61577,
+        "lon": 121.72285,
+        "state_code": "02",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Trento",
+        "country_code": "PH",
+        "lat": 8.04583,
+        "lon": 126.06361,
+        "state_code": "13",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Toledo",
+        "country_code": "PH",
+        "lat": 10.3773,
+        "lon": 123.6386,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Tiwi",
+        "country_code": "PH",
+        "lat": 13.4585,
+        "lon": 123.6805,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Ternate",
+        "country_code": "PH",
+        "lat": 14.2897,
+        "lon": 120.7168,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Teresa",
+        "country_code": "PH",
+        "lat": 14.5612,
+        "lon": 121.2195,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Telabastagan",
+        "country_code": "PH",
+        "lat": 15.11854,
+        "lon": 120.60773,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Taytay",
+        "country_code": "PH",
+        "lat": 14.55883,
+        "lon": 121.13285,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Tayabas",
+        "country_code": "PH",
+        "lat": 14.0259,
+        "lon": 121.5929,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Tarlac City",
+        "country_code": "PH",
+        "lat": 15.48017,
+        "lon": 120.59794,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Tanjay",
+        "country_code": "PH",
+        "lat": 9.5162,
+        "lon": 123.158,
+        "state_code": "NIR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Tangub",
+        "country_code": "PH",
+        "lat": 8.0618,
+        "lon": 123.7477,
+        "state_code": "10",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Tandag",
+        "country_code": "PH",
+        "lat": 9.07833,
+        "lon": 126.19861,
+        "state_code": "13",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Tanay",
+        "country_code": "PH",
+        "lat": 14.4968,
+        "lon": 121.2846,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Tanauan",
+        "country_code": "PH",
+        "lat": 14.08627,
+        "lon": 121.14975,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Tanauan",
+        "country_code": "PH",
+        "lat": 11.10944,
+        "lon": 125.01556,
+        "state_code": "08",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Taloc",
+        "country_code": "PH",
+        "lat": 10.5746,
+        "lon": 122.8954,
+        "state_code": "NIR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Talisay",
+        "country_code": "PH",
+        "lat": 14.0925,
+        "lon": 121.02194,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Talisay",
+        "country_code": "PH",
+        "lat": 10.7375,
+        "lon": 122.9666,
+        "state_code": "NIR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Talisay",
+        "country_code": "PH",
+        "lat": 10.24472,
+        "lon": 123.84944,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Talavera",
+        "country_code": "PH",
+        "lat": 15.5883,
+        "lon": 120.9192,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Talacogon",
+        "country_code": "PH",
+        "lat": 8.45611,
+        "lon": 125.78417,
+        "state_code": "13",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Magugpo",
+        "country_code": "PH",
+        "lat": 7.4475,
+        "lon": 125.8046,
+        "state_code": "11",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Taguig",
+        "country_code": "PH",
+        "lat": 14.5243,
+        "lon": 121.0792,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Tagudin",
+        "country_code": "PH",
+        "lat": 16.9355,
+        "lon": 120.4442,
+        "state_code": "01",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Tagoloan",
+        "country_code": "PH",
+        "lat": 8.53954,
+        "lon": 124.75411,
+        "state_code": "10",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Tagbilaran City",
+        "country_code": "PH",
+        "lat": 9.65556,
+        "lon": 123.85219,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Tagas",
+        "country_code": "PH",
+        "lat": 13.16667,
+        "lon": 123.71667,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Tacurong",
+        "country_code": "PH",
+        "lat": 6.6925,
+        "lon": 124.67639,
+        "state_code": "12",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Tabuk",
+        "country_code": "PH",
+        "lat": 17.47378,
+        "lon": 121.46799,
+        "state_code": "15",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Tabaco",
+        "country_code": "PH",
+        "lat": 13.35861,
+        "lon": 123.73361,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Taal",
+        "country_code": "PH",
+        "lat": 13.87992,
+        "lon": 120.92311,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Surigao",
+        "country_code": "PH",
+        "lat": 9.789,
+        "lon": 125.495,
+        "state_code": "13",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Surallah",
+        "country_code": "PH",
+        "lat": 6.37527,
+        "lon": 124.74521,
+        "state_code": "12",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Subic",
+        "country_code": "PH",
+        "lat": 14.87999,
+        "lon": 120.23433,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Suay",
+        "country_code": "PH",
+        "lat": 10.0533,
+        "lon": 122.8423,
+        "state_code": "NIR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Sorsogon",
+        "country_code": "PH",
+        "lat": 12.97389,
+        "lon": 123.99333,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Solano",
+        "country_code": "PH",
+        "lat": 16.51918,
+        "lon": 121.18124,
+        "state_code": "02",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Solana",
+        "country_code": "PH",
+        "lat": 17.6528,
+        "lon": 121.691,
+        "state_code": "02",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Sipalay",
+        "country_code": "PH",
+        "lat": 9.75194,
+        "lon": 122.40417,
+        "state_code": "06",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Silang",
+        "country_code": "PH",
+        "lat": 14.21567,
+        "lon": 120.97137,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Sibulan",
+        "country_code": "PH",
+        "lat": 9.3584,
+        "lon": 123.285,
+        "state_code": "NIR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Sexmoan",
+        "country_code": "PH",
+        "lat": 14.9438,
+        "lon": 120.6229,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Sebu",
+        "country_code": "PH",
+        "lat": 6.22,
+        "lon": 124.69361,
+        "state_code": "12",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Sariaya",
+        "country_code": "PH",
+        "lat": 13.9624,
+        "lon": 121.5265,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Vicente",
+        "country_code": "PH",
+        "lat": 15.2921,
+        "lon": 120.65498,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Santo Tomas",
+        "country_code": "PH",
+        "lat": 14.1079,
+        "lon": 121.14136,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Santol",
+        "country_code": "PH",
+        "lat": 15.16222,
+        "lon": 120.5675,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Santiago",
+        "country_code": "PH",
+        "lat": 16.68808,
+        "lon": 121.5487,
+        "state_code": "02",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Santa Rosa",
+        "country_code": "PH",
+        "lat": 14.31222,
+        "lon": 121.11139,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Santa Maria",
+        "country_code": "PH",
+        "lat": 16.9518,
+        "lon": 120.4445,
+        "state_code": "01",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Santa Maria",
+        "country_code": "PH",
+        "lat": 6.55361,
+        "lon": 125.47083,
+        "state_code": "11",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Santa Cruz",
+        "country_code": "PH",
+        "lat": 15.7654,
+        "lon": 119.9092,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Santa Cruz",
+        "country_code": "PH",
+        "lat": 14.9127,
+        "lon": 120.56659,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Santa Cruz",
+        "country_code": "PH",
+        "lat": 14.2814,
+        "lon": 121.4161,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Santa Catalina",
+        "country_code": "PH",
+        "lat": 9.3337,
+        "lon": 122.8637,
+        "state_code": "NIR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Santa Barbara",
+        "country_code": "PH",
+        "lat": 16.0009,
+        "lon": 120.4023,
+        "state_code": "01",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Santa Ana",
+        "country_code": "PH",
+        "lat": 15.0955,
+        "lon": 120.767,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Simon",
+        "country_code": "PH",
+        "lat": 14.9996,
+        "lon": 120.7808,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Pedro",
+        "country_code": "PH",
+        "lat": 14.3595,
+        "lon": 121.0473,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Pascual",
+        "country_code": "PH",
+        "lat": 13.81045,
+        "lon": 121.022,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Pablo",
+        "country_code": "PH",
+        "lat": 14.0683,
+        "lon": 121.3256,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Nicolas",
+        "country_code": "PH",
+        "lat": 18.1725,
+        "lon": 120.5953,
+        "state_code": "01",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Narciso",
+        "country_code": "PH",
+        "lat": 15.0143,
+        "lon": 120.0803,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Miguel",
+        "country_code": "PH",
+        "lat": 15.44397,
+        "lon": 120.59923,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Miguel",
+        "country_code": "PH",
+        "lat": 15.1423,
+        "lon": 120.97568,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Mateo",
+        "country_code": "PH",
+        "lat": 16.88206,
+        "lon": 121.58694,
+        "state_code": "02",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Mateo",
+        "country_code": "PH",
+        "lat": 14.6982,
+        "lon": 121.1236,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Mariano",
+        "country_code": "PH",
+        "lat": 7.5,
+        "lon": 126,
+        "state_code": "11",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Marcelino",
+        "country_code": "PH",
+        "lat": 14.97418,
+        "lon": 120.15733,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Luis",
+        "country_code": "PH",
+        "lat": 15.0401,
+        "lon": 120.7883,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Leonardo",
+        "country_code": "PH",
+        "lat": 15.363,
+        "lon": 120.9639,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Juan",
+        "country_code": "PH",
+        "lat": 14.6,
+        "lon": 121.0333,
+        "state_code": "NCR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Jose del Monte",
+        "country_code": "PH",
+        "lat": 14.81389,
+        "lon": 121.04528,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Jose",
+        "country_code": "PH",
+        "lat": 13.35,
+        "lon": 123.55,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Jose",
+        "country_code": "PH",
+        "lat": 12.35275,
+        "lon": 121.06761,
+        "state_code": "41",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Ildefonso",
+        "country_code": "PH",
+        "lat": 15.0809,
+        "lon": 120.941,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Francisco",
+        "country_code": "PH",
+        "lat": 15.35566,
+        "lon": 120.84001,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Aurora",
+        "country_code": "PH",
+        "lat": 13.3476,
+        "lon": 122.5195,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Francisco",
+        "country_code": "PH",
+        "lat": 8.53556,
+        "lon": 125.95,
+        "state_code": "13",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Fernando",
+        "country_code": "PH",
+        "lat": 16.61591,
+        "lon": 120.31663,
+        "state_code": "01",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Fernando",
+        "country_code": "PH",
+        "lat": 15.03425,
+        "lon": 120.68445,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Fernando",
+        "country_code": "PH",
+        "lat": 10.1624,
+        "lon": 123.7076,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Antonio",
+        "country_code": "PH",
+        "lat": 15.3062,
+        "lon": 120.856,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Sampaloc",
+        "country_code": "PH",
+        "lat": 14.5402,
+        "lon": 121.3602,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Samal",
+        "country_code": "PH",
+        "lat": 14.76778,
+        "lon": 120.54306,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Samal",
+        "country_code": "PH",
+        "lat": 7.07444,
+        "lon": 125.70833,
+        "state_code": "11",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Sagay",
+        "country_code": "PH",
+        "lat": 10.94472,
+        "lon": 123.42417,
+        "state_code": "06",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [
+            {
+                "type": "Flood Warning",
+                "description": "Continuous heavy rainfall caused by a low-pressure area may result in localized flooding in Roxas City, particularly in coastal barangays and urban areas with poor drainage.",
+                "severity": "Warning",
+                "effective_utc": "2019-02-09T02:51:00",
+                "effective_local": "2019-02-08T21:51:00",
+                "expires_utc": "2019-02-10T02:51:00",
+                "expires_local": "2019-02-09T21:51:00",
+                "uri": "https://api.weather.gov/alerts/NWS-IDP-PROD-3361975-2942026",
+                "alerts": ["Roxas"]
+            }
+        ],
+        "city_name": "Roxas",
+        "country_code": "PH",
+        "lat": 17.11894,
+        "lon": 121.62014,
+        "state_code": "02",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Roxas City",
+        "country_code": "PH",
+        "lat": 11.58528,
+        "lon": 122.75111,
+        "state_code": "06",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Roxas",
+        "country_code": "PH",
+        "lat": 10.3215,
+        "lon": 119.3451,
+        "state_code": "41",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Romblon",
+        "country_code": "PH",
+        "lat": 12.57513,
+        "lon": 122.27081,
+        "state_code": "41",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Rizal",
+        "country_code": "PH",
+        "lat": 15.7118,
+        "lon": 121.1061,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Ramos",
+        "country_code": "PH",
+        "lat": 15.6653,
+        "lon": 120.6406,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Ramon",
+        "country_code": "PH",
+        "lat": 16.78416,
+        "lon": 121.53504,
+        "state_code": "02",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Quiapo",
+        "country_code": "PH",
+        "lat": 14.6,
+        "lon": 120.9833,
+        "state_code": "NCR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Quezon City",
+        "country_code": "PH",
+        "lat": 14.6488,
+        "lon": 121.0509,
+        "state_code": "NCR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Quezon",
+        "country_code": "PH",
+        "lat": 15.5512,
+        "lon": 120.8147,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Quezon",
+        "country_code": "PH",
+        "lat": 7.73028,
+        "lon": 125.09889,
+        "state_code": "10",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Pulupandan",
+        "country_code": "PH",
+        "lat": 10.5203,
+        "lon": 122.8017,
+        "state_code": "06",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Pulong Santa Cruz",
+        "country_code": "PH",
+        "lat": 14.27324,
+        "lon": 121.07643,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Pulilan",
+        "country_code": "PH",
+        "lat": 14.90167,
+        "lon": 120.84917,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Puerto Princesa",
+        "country_code": "PH",
+        "lat": 9.73917,
+        "lon": 118.73528,
+        "state_code": "41",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Port Area",
+        "country_code": "PH",
+        "lat": 14.5833,
+        "lon": 120.9667,
+        "state_code": "NCR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Porac",
+        "country_code": "PH",
+        "lat": 15.0711,
+        "lon": 120.5423,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Polomolok",
+        "country_code": "PH",
+        "lat": 6.22167,
+        "lon": 125.06398,
+        "state_code": "11",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Polangui",
+        "country_code": "PH",
+        "lat": 13.2923,
+        "lon": 123.4855,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Plaridel",
+        "country_code": "PH",
+        "lat": 14.88722,
+        "lon": 120.85722,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Pio",
+        "country_code": "PH",
+        "lat": 15.04741,
+        "lon": 120.51891,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Pinamungahan",
+        "country_code": "PH",
+        "lat": 10.2708,
+        "lon": 123.5839,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Pinamalayan",
+        "country_code": "PH",
+        "lat": 13.04603,
+        "lon": 121.46205,
+        "state_code": "41",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Pililla",
+        "country_code": "PH",
+        "lat": 14.4854,
+        "lon": 121.3062,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Pilar",
+        "country_code": "PH",
+        "lat": 14.66,
+        "lon": 120.56528,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Pila",
+        "country_code": "PH",
+        "lat": 14.2325,
+        "lon": 121.3648,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Peñaranda",
+        "country_code": "PH",
+        "lat": 15.35116,
+        "lon": 121.00393,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Patuto",
+        "country_code": "PH",
+        "lat": 14.11667,
+        "lon": 120.96667,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Passi",
+        "country_code": "PH",
+        "lat": 11.10778,
+        "lon": 122.64194,
+        "state_code": "06",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Parang",
+        "country_code": "PH",
+        "lat": 7.37035,
+        "lon": 124.26973,
+        "state_code": "14",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Paraiso",
+        "country_code": "PH",
+        "lat": 10.8849,
+        "lon": 123.3627,
+        "state_code": "NIR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Papaya",
+        "country_code": "PH",
+        "lat": 15.32016,
+        "lon": 120.83574,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Paombong",
+        "country_code": "PH",
+        "lat": 14.83111,
+        "lon": 120.78917,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Pantubig",
+        "country_code": "PH",
+        "lat": 14.96806,
+        "lon": 120.95472,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Paniqui",
+        "country_code": "PH",
+        "lat": 15.6689,
+        "lon": 120.5806,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Pangil",
+        "country_code": "PH",
+        "lat": 14.4033,
+        "lon": 121.46506,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Pandi",
+        "country_code": "PH",
+        "lat": 14.865,
+        "lon": 120.95722,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Pandacaqui",
+        "country_code": "PH",
+        "lat": 15.1719,
+        "lon": 120.65457,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Panalanoy",
+        "country_code": "PH",
+        "lat": 11.25111,
+        "lon": 125.00639,
+        "state_code": "08",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Panabo",
+        "country_code": "PH",
+        "lat": 7.30806,
+        "lon": 125.68417,
+        "state_code": "11",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Palo",
+        "country_code": "PH",
+        "lat": 11.1575,
+        "lon": 124.99083,
+        "state_code": "08",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Palayan City",
+        "country_code": "PH",
+        "lat": 15.5415,
+        "lon": 121.0848,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Pagbilao",
+        "country_code": "PH",
+        "lat": 13.96689,
+        "lon": 121.69835,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Pagaluñgan",
+        "country_code": "PH",
+        "lat": 7.14167,
+        "lon": 124.38056,
+        "state_code": "14",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Pagadian",
+        "country_code": "PH",
+        "lat": 7.8257,
+        "lon": 123.437,
+        "state_code": "09",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Paete",
+        "country_code": "PH",
+        "lat": 14.3647,
+        "lon": 121.4829,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Ozamiz City",
+        "country_code": "PH",
+        "lat": 8.1481,
+        "lon": 123.8405,
+        "state_code": "10",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Oroquieta",
+        "country_code": "PH",
+        "lat": 8.4859,
+        "lon": 123.8048,
+        "state_code": "10",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [
+            {
+                "type": "Flood Warning",
+                "description": "Light to moderate rains due to the Northeast Monsoon may cause minor flooding in Ormoc City, particularly in barangays near creeks and rivers.",
+                "severity": "Warning",
+                "effective_utc": "2019-02-09T02:51:00",
+                "effective_local": "2019-02-08T21:51:00",
+                "expires_utc": "2019-02-10T02:51:00",
+                "expires_local": "2019-02-09T21:51:00",
+                "uri": "https://api.weather.gov/alerts/NWS-IDP-PROD-3361975-2942026",
+                "alerts": ["Ormoc"]
+            }
+        ],
+        "city_name": "Ormoc",
+        "country_code": "PH",
+        "lat": 11.00639,
+        "lon": 124.6075,
+        "state_code": "08",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Orion",
+        "country_code": "PH",
+        "lat": 14.62056,
+        "lon": 120.58167,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Orani",
+        "country_code": "PH",
+        "lat": 14.8006,
+        "lon": 120.5371,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Olongapo",
+        "country_code": "PH",
+        "lat": 14.82917,
+        "lon": 120.28278,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Obando",
+        "country_code": "PH",
+        "lat": 14.7098,
+        "lon": 120.9362,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Noveleta",
+        "country_code": "PH",
+        "lat": 14.42922,
+        "lon": 120.87989,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Norzagaray",
+        "country_code": "PH",
+        "lat": 14.9109,
+        "lon": 121.0493,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "New Corella",
+        "country_code": "PH",
+        "lat": 7.5866,
+        "lon": 125.8237,
+        "state_code": "11",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Nasugbu",
+        "country_code": "PH",
+        "lat": 14.06694,
+        "lon": 120.63181,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [
+            {
+                "type": "Flood Warning",
+                "description": "Heavy rains brought by a tropical storm are expected to cause flooding in Narra, particularly in low-lying barangays and agricultural areas near rivers.",
+                "severity": "Warning",
+                "effective_utc": "2019-02-09T02:51:00",
+                "effective_local": "2019-02-08T21:51:00",
+                "expires_utc": "2019-02-10T02:51:00",
+                "expires_local": "2019-02-09T21:51:00",
+                "uri": "https://api.weather.gov/alerts/NWS-IDP-PROD-3361975-2942026",
+                "alerts": ["Narra"]
+            }
+        ],
+        "city_name": "Narra",
+        "country_code": "PH",
+        "lat": 9.26877,
+        "lon": 118.4043,
+        "state_code": "41",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Naic",
+        "country_code": "PH",
+        "lat": 14.31812,
+        "lon": 120.76609,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Nagcarlan",
+        "country_code": "PH",
+        "lat": 14.1364,
+        "lon": 121.4165,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Naga",
+        "country_code": "PH",
+        "lat": 13.61917,
+        "lon": 123.18139,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Naga",
+        "country_code": "PH",
+        "lat": 10.20898,
+        "lon": 123.758,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Nabunturan",
+        "country_code": "PH",
+        "lat": 7.60778,
+        "lon": 125.96639,
+        "state_code": "11",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Nabua",
+        "country_code": "PH",
+        "lat": 13.4075,
+        "lon": 123.3724,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Muricay",
+        "country_code": "PH",
+        "lat": 7.8275,
+        "lon": 123.4782,
+        "state_code": "09",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Murcia",
+        "country_code": "PH",
+        "lat": 10.60516,
+        "lon": 123.0417,
+        "state_code": "06",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Muñoz",
+        "country_code": "PH",
+        "lat": 15.71611,
+        "lon": 120.90306,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Morong",
+        "country_code": "PH",
+        "lat": 14.67889,
+        "lon": 120.26611,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Morong",
+        "country_code": "PH",
+        "lat": 14.51849,
+        "lon": 121.23778,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Rodriguez",
+        "country_code": "PH",
+        "lat": 14.76011,
+        "lon": 121.19993,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Monkayo",
+        "country_code": "PH",
+        "lat": 7.81528,
+        "lon": 126.05444,
+        "state_code": "11",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Molave",
+        "country_code": "PH",
+        "lat": 8.0844,
+        "lon": 123.491,
+        "state_code": "09",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Minglanilla",
+        "country_code": "PH",
+        "lat": 10.24498,
+        "lon": 123.7964,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Midsayap",
+        "country_code": "PH",
+        "lat": 7.19083,
+        "lon": 124.53028,
+        "state_code": "12",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Meycauayan",
+        "country_code": "PH",
+        "lat": 14.73694,
+        "lon": 120.96083,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Mexico",
+        "country_code": "PH",
+        "lat": 15.0646,
+        "lon": 120.7198,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Mendez-Nuñez",
+        "country_code": "PH",
+        "lat": 14.12861,
+        "lon": 120.90583,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Mauban",
+        "country_code": "PH",
+        "lat": 14.191,
+        "lon": 121.7309,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Mati",
+        "country_code": "PH",
+        "lat": 6.95508,
+        "lon": 126.21655,
+        "state_code": "11",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Masinloc",
+        "country_code": "PH",
+        "lat": 15.5363,
+        "lon": 119.9502,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Masbate",
+        "country_code": "PH",
+        "lat": 12.37169,
+        "lon": 123.62494,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Masantol",
+        "country_code": "PH",
+        "lat": 14.896,
+        "lon": 120.7092,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Mariveles",
+        "country_code": "PH",
+        "lat": 14.43385,
+        "lon": 120.48569,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Marilao",
+        "country_code": "PH",
+        "lat": 14.75778,
+        "lon": 120.94833,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Marawi City",
+        "country_code": "PH",
+        "lat": 8.0034,
+        "lon": 124.28395,
+        "state_code": "14",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Maramag",
+        "country_code": "PH",
+        "lat": 7.76333,
+        "lon": 125.00528,
+        "state_code": "10",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Maragondon",
+        "country_code": "PH",
+        "lat": 14.2733,
+        "lon": 120.7377,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Mantampay",
+        "country_code": "PH",
+        "lat": 8.16667,
+        "lon": 124.21667,
+        "state_code": "10",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Mansilingan",
+        "country_code": "PH",
+        "lat": 10.63111,
+        "lon": 122.97889,
+        "state_code": "06",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Manolo Fortich",
+        "country_code": "PH",
+        "lat": 8.36972,
+        "lon": 124.86444,
+        "state_code": "10",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Manila",
+        "country_code": "PH",
+        "lat": 14.6042,
+        "lon": 120.9822,
+        "state_code": "NCR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Manibaug Pasig",
+        "country_code": "PH",
+        "lat": 15.09621,
+        "lon": 120.56445,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Mangaldan",
+        "country_code": "PH",
+        "lat": 16.07,
+        "lon": 120.4025,
+        "state_code": "01",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [
+            {
+                "type": "Flash Flood Warning",
+                "description": "Heavy rains due to a tropical disturbance are expected to cause flash flooding in Mandaue City. Low-lying urban areas and areas with poor drainage are at high risk.",
+                "severity": "Warning",
+                "effective_utc": "2019-02-09T02:51:00",
+                "effective_local": "2019-02-08T21:51:00",
+                "expires_utc": "2019-02-10T02:51:00",
+                "expires_local": "2019-02-09T21:51:00",
+                "uri": "https://api.weather.gov/alerts/NWS-IDP-PROD-3361975-2942026",
+                "alerts": ["Mandaue City"]
+            }
+        ],
+        "city_name": "Mandaue City",
+        "country_code": "PH",
+        "lat": 10.32361,
+        "lon": 123.92222,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Mandaluyong City",
+        "country_code": "PH",
+        "lat": 14.5832,
+        "lon": 121.0409,
+        "state_code": "NCR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Mankayan",
+        "country_code": "PH",
+        "lat": 16.8632,
+        "lon": 120.7829,
+        "state_code": "15",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Manay",
+        "country_code": "PH",
+        "lat": 7.215,
+        "lon": 126.53972,
+        "state_code": "11",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Manapla",
+        "country_code": "PH",
+        "lat": 10.95803,
+        "lon": 123.123,
+        "state_code": "06",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Manaoag",
+        "country_code": "PH",
+        "lat": 16.0438,
+        "lon": 120.4861,
+        "state_code": "01",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Mamburao",
+        "country_code": "PH",
+        "lat": 13.2233,
+        "lon": 120.596,
+        "state_code": "41",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Mamatid",
+        "country_code": "PH",
+        "lat": 14.2349,
+        "lon": 121.15902,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Malvar",
+        "country_code": "PH",
+        "lat": 14.04472,
+        "lon": 121.15861,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Maluso",
+        "country_code": "PH",
+        "lat": 6.543,
+        "lon": 121.8753,
+        "state_code": "14",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Maluñgun",
+        "country_code": "PH",
+        "lat": 6.27917,
+        "lon": 125.28167,
+        "state_code": "12",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Malolos",
+        "country_code": "PH",
+        "lat": 14.8443,
+        "lon": 120.81039,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Malilipot",
+        "country_code": "PH",
+        "lat": 13.3188,
+        "lon": 123.7385,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Malaybalay",
+        "country_code": "PH",
+        "lat": 8.1575,
+        "lon": 125.12778,
+        "state_code": "10",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Malapatan",
+        "country_code": "PH",
+        "lat": 5.96917,
+        "lon": 125.28944,
+        "state_code": "12",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Malanday",
+        "country_code": "PH",
+        "lat": 14.7069,
+        "lon": 121.1306,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Malabanban Norte",
+        "country_code": "PH",
+        "lat": 13.94521,
+        "lon": 121.43065,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Makati City",
+        "country_code": "PH",
+        "lat": 14.55027,
+        "lon": 121.03269,
+        "state_code": "NCR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Mahayag",
+        "country_code": "PH",
+        "lat": 8.1183,
+        "lon": 123.4455,
+        "state_code": "09",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Magsaysay",
+        "country_code": "PH",
+        "lat": 6.76667,
+        "lon": 125.18333,
+        "state_code": "11",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Magarao",
+        "country_code": "PH",
+        "lat": 13.6604,
+        "lon": 123.1869,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Maganoy",
+        "country_code": "PH",
+        "lat": 6.86472,
+        "lon": 124.44167,
+        "state_code": "14",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Magalang",
+        "country_code": "PH",
+        "lat": 15.2151,
+        "lon": 120.6596,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Mabalacat City",
+        "country_code": "PH",
+        "lat": 15.22303,
+        "lon": 120.57117,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Maasin",
+        "country_code": "PH",
+        "lat": 10.13361,
+        "lon": 124.84472,
+        "state_code": "08",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Maao",
+        "country_code": "PH",
+        "lat": 10.4896,
+        "lon": 122.9907,
+        "state_code": "NIR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Lupon",
+        "country_code": "PH",
+        "lat": 6.89814,
+        "lon": 126.00961,
+        "state_code": "11",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Lumbang",
+        "country_code": "PH",
+        "lat": 14.2973,
+        "lon": 121.4598,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Lucena",
+        "country_code": "PH",
+        "lat": 13.93139,
+        "lon": 121.61722,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Lucban",
+        "country_code": "PH",
+        "lat": 14.11356,
+        "lon": 121.55574,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Lubao",
+        "country_code": "PH",
+        "lat": 14.9405,
+        "lon": 120.6011,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Los Baños",
+        "country_code": "PH",
+        "lat": 14.17025,
+        "lon": 121.24181,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Lopez",
+        "country_code": "PH",
+        "lat": 13.884,
+        "lon": 122.2604,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Loma de Gato",
+        "country_code": "PH",
+        "lat": 14.78869,
+        "lon": 120.99889,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Loboc",
+        "country_code": "PH",
+        "lat": 9.63833,
+        "lon": 124.03482,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Lipa City",
+        "country_code": "PH",
+        "lat": 13.9411,
+        "lon": 121.1631,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Lingayen",
+        "country_code": "PH",
+        "lat": 16.02182,
+        "lon": 120.23194,
+        "state_code": "01",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Lilio",
+        "country_code": "PH",
+        "lat": 14.1313,
+        "lon": 121.4362,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Libon",
+        "country_code": "PH",
+        "lat": 13.2997,
+        "lon": 123.4386,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Libertad",
+        "country_code": "PH",
+        "lat": 8.94417,
+        "lon": 125.50194,
+        "state_code": "13",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Legaspi",
+        "country_code": "PH",
+        "lat": 13.14125,
+        "lon": 123.74073,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Laur",
+        "country_code": "PH",
+        "lat": 15.5865,
+        "lon": 121.1834,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "La Trinidad",
+        "country_code": "PH",
+        "lat": 16.455,
+        "lon": 120.5875,
+        "state_code": "15",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Lapu-Lapu City",
+        "country_code": "PH",
+        "lat": 10.31028,
+        "lon": 123.94944,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "La Paz",
+        "country_code": "PH",
+        "lat": 15.44125,
+        "lon": 120.72863,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Laoag",
+        "country_code": "PH",
+        "lat": 18.1978,
+        "lon": 120.5957,
+        "state_code": "01",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Lala",
+        "country_code": "PH",
+        "lat": 7.9745,
+        "lon": 123.7458,
+        "state_code": "10",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Laguilayan",
+        "country_code": "PH",
+        "lat": 6.6525,
+        "lon": 124.52111,
+        "state_code": "12",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "La Castellana",
+        "country_code": "PH",
+        "lat": 10.3239,
+        "lon": 123.0215,
+        "state_code": "06",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "La Carlota",
+        "country_code": "PH",
+        "lat": 10.4242,
+        "lon": 122.9212,
+        "state_code": "NIR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Labo",
+        "country_code": "PH",
+        "lat": 14.1532,
+        "lon": 122.8303,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Koronadal",
+        "country_code": "PH",
+        "lat": 6.50306,
+        "lon": 124.84694,
+        "state_code": "12",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Kidapawan",
+        "country_code": "PH",
+        "lat": 7.00833,
+        "lon": 125.08944,
+        "state_code": "12",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Kawit",
+        "country_code": "PH",
+        "lat": 14.44426,
+        "lon": 120.90164,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Kalibo (poblacion)",
+        "country_code": "PH",
+        "lat": 11.70611,
+        "lon": 122.36444,
+        "state_code": "06",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Kabankalan",
+        "country_code": "PH",
+        "lat": 9.9839,
+        "lon": 122.81423,
+        "state_code": "06",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Kabacan",
+        "country_code": "PH",
+        "lat": 7.10667,
+        "lon": 124.82917,
+        "state_code": "12",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Jose Pañganiban",
+        "country_code": "PH",
+        "lat": 14.2906,
+        "lon": 122.6917,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [
+            {
+                "type": "Flood Warning",
+                "description": "Heavy rains from a tropical disturbance are likely to cause widespread flooding in Jolo, particularly in coastal and low-lying areas.",
+                "severity": "Warning",
+                "effective_utc": "2019-02-09T02:51:00",
+                "effective_local": "2019-02-08T21:51:00",
+                "expires_utc": "2019-02-10T02:51:00",
+                "expires_local": "2019-02-09T21:51:00",
+                "uri": "https://api.weather.gov/alerts/NWS-IDP-PROD-3361975-2942026",
+                "alerts": ["Jolo"]
+            }
+        ],
+        "city_name": "Jolo",
+        "country_code": "PH",
+        "lat": 6.05222,
+        "lon": 121.00222,
+        "state_code": "14",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Jasaan",
+        "country_code": "PH",
+        "lat": 8.65417,
+        "lon": 124.75556,
+        "state_code": "10",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Jalajala",
+        "country_code": "PH",
+        "lat": 14.353,
+        "lon": 121.3225,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Jagna",
+        "country_code": "PH",
+        "lat": 9.6531,
+        "lon": 124.3697,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Jaen",
+        "country_code": "PH",
+        "lat": 15.3275,
+        "lon": 120.9192,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Itogon",
+        "country_code": "PH",
+        "lat": 16.36389,
+        "lon": 120.67694,
+        "state_code": "15",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Isulan",
+        "country_code": "PH",
+        "lat": 6.62944,
+        "lon": 124.605,
+        "state_code": "12",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Isabela",
+        "country_code": "PH",
+        "lat": 10.2048,
+        "lon": 122.9888,
+        "state_code": "06",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "City of Isabela",
+        "country_code": "PH",
+        "lat": 6.70407,
+        "lon": 121.97117,
+        "state_code": "14",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Irosin",
+        "country_code": "PH",
+        "lat": 12.70013,
+        "lon": 124.03221,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Iriga City",
+        "country_code": "PH",
+        "lat": 13.4324,
+        "lon": 123.4115,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Ipil",
+        "country_code": "PH",
+        "lat": 7.78444,
+        "lon": 122.58611,
+        "state_code": "09",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Indang",
+        "country_code": "PH",
+        "lat": 14.19528,
+        "lon": 120.87694,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Imus",
+        "country_code": "PH",
+        "lat": 14.42972,
+        "lon": 120.93667,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Iloilo",
+        "country_code": "PH",
+        "lat": 10.69694,
+        "lon": 122.56444,
+        "state_code": "06",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Iligan City",
+        "country_code": "PH",
+        "lat": 8.25,
+        "lon": 124.4,
+        "state_code": "12",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Ilagan",
+        "country_code": "PH",
+        "lat": 17.14854,
+        "lon": 121.88924,
+        "state_code": "02",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Iba",
+        "country_code": "PH",
+        "lat": 15.3276,
+        "lon": 119.978,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Hinigaran",
+        "country_code": "PH",
+        "lat": 10.2706,
+        "lon": 122.8507,
+        "state_code": "06",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Himamaylan",
+        "country_code": "PH",
+        "lat": 10.09889,
+        "lon": 122.87056,
+        "state_code": "06",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Hermosa",
+        "country_code": "PH",
+        "lat": 14.8314,
+        "lon": 120.5081,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Hagonoy",
+        "country_code": "PH",
+        "lat": 14.83413,
+        "lon": 120.73271,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Guyong",
+        "country_code": "PH",
+        "lat": 14.8361,
+        "lon": 120.97844,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Gumaca",
+        "country_code": "PH",
+        "lat": 13.921,
+        "lon": 122.1002,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Guiset East",
+        "country_code": "PH",
+        "lat": 16.06667,
+        "lon": 120.68333,
+        "state_code": "01",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Guimba",
+        "country_code": "PH",
+        "lat": 15.6605,
+        "lon": 120.7683,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Guihulñgan",
+        "country_code": "PH",
+        "lat": 10.1214,
+        "lon": 123.2742,
+        "state_code": "NIR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Guiguinto",
+        "country_code": "PH",
+        "lat": 14.83333,
+        "lon": 120.88333,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Goa",
+        "country_code": "PH",
+        "lat": 13.6978,
+        "lon": 123.4892,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Glan",
+        "country_code": "PH",
+        "lat": 5.82417,
+        "lon": 125.20333,
+        "state_code": "12",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Gerona",
+        "country_code": "PH",
+        "lat": 15.6065,
+        "lon": 120.5978,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "General Trias",
+        "country_code": "PH",
+        "lat": 14.38694,
+        "lon": 120.88167,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "General Tinio",
+        "country_code": "PH",
+        "lat": 15.35075,
+        "lon": 121.04773,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "General Santos",
+        "country_code": "PH",
+        "lat": 6.11278,
+        "lon": 125.17167,
+        "state_code": "12",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "General Mamerto Natividad",
+        "country_code": "PH",
+        "lat": 15.6025,
+        "lon": 121.0515,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Gapan",
+        "country_code": "PH",
+        "lat": 15.3072,
+        "lon": 120.9464,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Escalante",
+        "country_code": "PH",
+        "lat": 10.84028,
+        "lon": 123.49917,
+        "state_code": "06",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Saravia",
+        "country_code": "PH",
+        "lat": 10.87754,
+        "lon": 122.9677,
+        "state_code": "NIR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Dumaguete",
+        "country_code": "PH",
+        "lat": 9.30722,
+        "lon": 123.30261,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Don Carlos",
+        "country_code": "PH",
+        "lat": 7.68,
+        "lon": 125.005,
+        "state_code": "10",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Domalanoan",
+        "country_code": "PH",
+        "lat": 16.00292,
+        "lon": 120.21154,
+        "state_code": "01",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Dologon",
+        "country_code": "PH",
+        "lat": 7.84083,
+        "lon": 125.04444,
+        "state_code": "10",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Dinalupihan",
+        "country_code": "PH",
+        "lat": 14.87827,
+        "lon": 120.45221,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Digos",
+        "country_code": "PH",
+        "lat": 6.74972,
+        "lon": 125.35722,
+        "state_code": "11",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Diadi",
+        "country_code": "PH",
+        "lat": 16.7262,
+        "lon": 121.3589,
+        "state_code": "02",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Del Pilar",
+        "country_code": "PH",
+        "lat": 15.03601,
+        "lon": 120.69935,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Davao",
+        "country_code": "PH",
+        "lat": 7.07306,
+        "lon": 125.61278,
+        "state_code": "11",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Dasmariñas",
+        "country_code": "PH",
+        "lat": 14.32944,
+        "lon": 120.93667,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Danao",
+        "country_code": "PH",
+        "lat": 10.52083,
+        "lon": 124.02722,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Danao",
+        "country_code": "PH",
+        "lat": 9.55421,
+        "lon": 123.75648,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Daet",
+        "country_code": "PH",
+        "lat": 14.1122,
+        "lon": 122.9553,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Cuenca",
+        "country_code": "PH",
+        "lat": 13.902,
+        "lon": 121.0521,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Cotabato",
+        "country_code": "PH",
+        "lat": 7.22361,
+        "lon": 124.24639,
+        "state_code": "14",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Consolacion",
+        "country_code": "PH",
+        "lat": 10.3766,
+        "lon": 123.9573,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Concepcion",
+        "country_code": "PH",
+        "lat": 15.32546,
+        "lon": 120.65723,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Concepcion Ibaba",
+        "country_code": "PH",
+        "lat": 13.92309,
+        "lon": 121.46099,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [
+            {
+                "type": "Flood Warning",
+                "description": "Heavy rains due to the Intertropical Convergence Zone (ITCZ) are expected to cause flooding in Compostela, especially in low-lying areas and barangays near the Agusan River.",
+                "severity": "Warning",
+                "effective_utc": "2019-02-09T02:51:00",
+                "effective_local": "2019-02-08T21:51:00",
+                "expires_utc": "2019-02-10T02:51:00",
+                "expires_local": "2019-02-09T21:51:00",
+                "uri": "https://api.weather.gov/alerts/NWS-IDP-PROD-3361975-2942026",
+                "alerts": ["Compostela"]
+            }
+        ],
+        "city_name": "Compostela",
+        "country_code": "PH",
+        "lat": 10.455,
+        "lon": 124.0106,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Compostela",
+        "country_code": "PH",
+        "lat": 7.67306,
+        "lon": 126.08889,
+        "state_code": "11",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Cebu City",
+        "country_code": "PH",
+        "lat": 10.31672,
+        "lon": 123.89071,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Cavite City",
+        "country_code": "PH",
+        "lat": 14.48369,
+        "lon": 120.89878,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Catbalogan",
+        "country_code": "PH",
+        "lat": 11.77528,
+        "lon": 124.88611,
+        "state_code": "08",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Catarman",
+        "country_code": "PH",
+        "lat": 12.4989,
+        "lon": 124.6377,
+        "state_code": "08",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Catanauan",
+        "country_code": "PH",
+        "lat": 13.5926,
+        "lon": 122.3215,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Castillejos",
+        "country_code": "PH",
+        "lat": 14.93363,
+        "lon": 120.19785,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Carmona",
+        "country_code": "PH",
+        "lat": 14.3132,
+        "lon": 121.0576,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Cogan",
+        "country_code": "PH",
+        "lat": 10.59306,
+        "lon": 124.01778,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Carigara",
+        "country_code": "PH",
+        "lat": 11.29811,
+        "lon": 124.67895,
+        "state_code": "08",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Cardona",
+        "country_code": "PH",
+        "lat": 14.48646,
+        "lon": 121.22752,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Carcar",
+        "country_code": "PH",
+        "lat": 10.1061,
+        "lon": 123.6402,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Capas",
+        "country_code": "PH",
+        "lat": 15.33117,
+        "lon": 120.5898,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Canlaon",
+        "country_code": "PH",
+        "lat": 10.38697,
+        "lon": 123.2227,
+        "state_code": "NIR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Candelaria",
+        "country_code": "PH",
+        "lat": 13.93111,
+        "lon": 121.42333,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Candaba",
+        "country_code": "PH",
+        "lat": 15.0956,
+        "lon": 120.8267,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Camiling",
+        "country_code": "PH",
+        "lat": 15.6866,
+        "lon": 120.4128,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Calumpit",
+        "country_code": "PH",
+        "lat": 14.91639,
+        "lon": 120.76583,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Calumpang",
+        "country_code": "PH",
+        "lat": 14.6228,
+        "lon": 121.0897,
+        "state_code": "NCR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Calbayog City",
+        "country_code": "PH",
+        "lat": 12.0668,
+        "lon": 124.5962,
+        "state_code": "08",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Calauan",
+        "country_code": "PH",
+        "lat": 14.14989,
+        "lon": 121.3152,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Calauag",
+        "country_code": "PH",
+        "lat": 13.9575,
+        "lon": 122.288,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Calatagan",
+        "country_code": "PH",
+        "lat": 13.83224,
+        "lon": 120.63219,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Calasiao",
+        "country_code": "PH",
+        "lat": 16.0111,
+        "lon": 120.36,
+        "state_code": "01",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Calapan",
+        "country_code": "PH",
+        "lat": 13.4117,
+        "lon": 121.1803,
+        "state_code": "41",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Calamba",
+        "country_code": "PH",
+        "lat": 14.21167,
+        "lon": 121.16528,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Calaca",
+        "country_code": "PH",
+        "lat": 13.93244,
+        "lon": 120.81327,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Calabanga",
+        "country_code": "PH",
+        "lat": 13.7068,
+        "lon": 123.2087,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Cainta",
+        "country_code": "PH",
+        "lat": 14.5786,
+        "lon": 121.1222,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Cagayan de Oro",
+        "country_code": "PH",
+        "lat": 8.48222,
+        "lon": 124.64722,
+        "state_code": "10",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Cabadbaran",
+        "country_code": "PH",
+        "lat": 9.12261,
+        "lon": 125.53549,
+        "state_code": "13",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Cadiz",
+        "country_code": "PH",
+        "lat": 10.9465,
+        "lon": 123.288,
+        "state_code": "NIR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Cabiao",
+        "country_code": "PH",
+        "lat": 15.2488,
+        "lon": 120.8548,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Cabayangan",
+        "country_code": "PH",
+        "lat": 7.40722,
+        "lon": 125.73306,
+        "state_code": "11",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Cabanatuan City",
+        "country_code": "PH",
+        "lat": 15.48586,
+        "lon": 120.96648,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Cabagan",
+        "country_code": "PH",
+        "lat": 17.42782,
+        "lon": 121.76955,
+        "state_code": "02",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Butuan",
+        "country_code": "PH",
+        "lat": 8.94917,
+        "lon": 125.54361,
+        "state_code": "13",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bustos",
+        "country_code": "PH",
+        "lat": 14.95806,
+        "lon": 120.91778,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Boroon",
+        "country_code": "PH",
+        "lat": 8.18278,
+        "lon": 124.17701,
+        "state_code": "10",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Burgos",
+        "country_code": "PH",
+        "lat": 15.72892,
+        "lon": 120.57224,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bunawan",
+        "country_code": "PH",
+        "lat": 8.16722,
+        "lon": 125.99083,
+        "state_code": "13",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Buluan",
+        "country_code": "PH",
+        "lat": 6.72028,
+        "lon": 124.80194,
+        "state_code": "14",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bulaon",
+        "country_code": "PH",
+        "lat": 15.08262,
+        "lon": 120.66288,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bulan",
+        "country_code": "PH",
+        "lat": 12.67139,
+        "lon": 123.875,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bulacan",
+        "country_code": "PH",
+        "lat": 14.79278,
+        "lon": 120.87889,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Buhi",
+        "country_code": "PH",
+        "lat": 13.4322,
+        "lon": 123.517,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bugo",
+        "country_code": "PH",
+        "lat": 8.50833,
+        "lon": 124.75944,
+        "state_code": "10",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Buenavista",
+        "country_code": "PH",
+        "lat": 8.97694,
+        "lon": 125.40889,
+        "state_code": "13",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Budta",
+        "country_code": "PH",
+        "lat": 7.20417,
+        "lon": 124.43972,
+        "state_code": "14",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Botolan",
+        "country_code": "PH",
+        "lat": 15.2896,
+        "lon": 120.0245,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Borongan",
+        "country_code": "PH",
+        "lat": 11.60806,
+        "lon": 125.43194,
+        "state_code": "08",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bongao",
+        "country_code": "PH",
+        "lat": 5.02917,
+        "lon": 119.77306,
+        "state_code": "14",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bongabon",
+        "country_code": "PH",
+        "lat": 15.6321,
+        "lon": 121.1448,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bogo",
+        "country_code": "PH",
+        "lat": 11.0517,
+        "lon": 124.0055,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bocaue",
+        "country_code": "PH",
+        "lat": 14.79833,
+        "lon": 120.92611,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bislig",
+        "country_code": "PH",
+        "lat": 8.21528,
+        "lon": 126.31639,
+        "state_code": "13",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Binonga",
+        "country_code": "PH",
+        "lat": 10.7719,
+        "lon": 122.9817,
+        "state_code": "NIR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Binmaley",
+        "country_code": "PH",
+        "lat": 16.03232,
+        "lon": 120.26904,
+        "state_code": "01",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Binangonan",
+        "country_code": "PH",
+        "lat": 14.4646,
+        "lon": 121.1929,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Binalbagan",
+        "country_code": "PH",
+        "lat": 10.1948,
+        "lon": 122.8581,
+        "state_code": "NIR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bignay Uno",
+        "country_code": "PH",
+        "lat": 13.86445,
+        "lon": 121.48792,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bayugan",
+        "country_code": "PH",
+        "lat": 8.75611,
+        "lon": 125.7675,
+        "state_code": "13",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bayombong",
+        "country_code": "PH",
+        "lat": 16.4812,
+        "lon": 121.1497,
+        "state_code": "02",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bayawan",
+        "country_code": "PH",
+        "lat": 9.3649,
+        "lon": 122.804,
+        "state_code": "NIR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bayambang",
+        "country_code": "PH",
+        "lat": 15.8127,
+        "lon": 120.4557,
+        "state_code": "01",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bay",
+        "country_code": "PH",
+        "lat": 14.18368,
+        "lon": 121.28554,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bauang",
+        "country_code": "PH",
+        "lat": 16.53083,
+        "lon": 120.33306,
+        "state_code": "01",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bauan",
+        "country_code": "PH",
+        "lat": 13.7917,
+        "lon": 121.0085,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bato",
+        "country_code": "PH",
+        "lat": 13.3528,
+        "lon": 123.3677,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Batangas",
+        "country_code": "PH",
+        "lat": 13.7567,
+        "lon": 121.0584,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Batac City",
+        "country_code": "PH",
+        "lat": 18.0554,
+        "lon": 120.56489,
+        "state_code": "01",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Baras",
+        "country_code": "PH",
+        "lat": 14.51691,
+        "lon": 121.2658,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bantayan",
+        "country_code": "PH",
+        "lat": 11.1683,
+        "lon": 123.7223,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bansalan",
+        "country_code": "PH",
+        "lat": 6.78611,
+        "lon": 125.21333,
+        "state_code": "11",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bañga",
+        "country_code": "PH",
+        "lat": 6.42389,
+        "lon": 124.77833,
+        "state_code": "12",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Banaybanay",
+        "country_code": "PH",
+        "lat": 13.85,
+        "lon": 121.2,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bambang",
+        "country_code": "PH",
+        "lat": 16.3865,
+        "lon": 121.1066,
+        "state_code": "02",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Baliuag",
+        "country_code": "PH",
+        "lat": 14.95472,
+        "lon": 120.89694,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Balayan",
+        "country_code": "PH",
+        "lat": 13.93714,
+        "lon": 120.73224,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Balanga",
+        "country_code": "PH",
+        "lat": 14.67611,
+        "lon": 120.53611,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Balagtas",
+        "country_code": "PH",
+        "lat": 14.81667,
+        "lon": 120.86667,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bais",
+        "country_code": "PH",
+        "lat": 9.59111,
+        "lon": 123.12278,
+        "state_code": "NIR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bah-Bah",
+        "country_code": "PH",
+        "lat": 8.60722,
+        "lon": 125.91444,
+        "state_code": "13",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Baguio",
+        "country_code": "PH",
+        "lat": 16.41639,
+        "lon": 120.59306,
+        "state_code": "15",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bago City",
+        "country_code": "PH",
+        "lat": 10.53333,
+        "lon": 122.83333,
+        "state_code": "06",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Baggabag B",
+        "country_code": "PH",
+        "lat": 16.50588,
+        "lon": 121.19014,
+        "state_code": "02",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bacolod City",
+        "country_code": "PH",
+        "lat": 10.66667,
+        "lon": 122.95,
+        "state_code": "06",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Babo-Pangulo",
+        "country_code": "PH",
+        "lat": 15.08333,
+        "lon": 120.51667,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Baao",
+        "country_code": "PH",
+        "lat": 13.4549,
+        "lon": 123.3653,
+        "state_code": "05",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Atimonan",
+        "country_code": "PH",
+        "lat": 14.0027,
+        "lon": 121.92078,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Asia",
+        "country_code": "PH",
+        "lat": 9.5506,
+        "lon": 122.5164,
+        "state_code": "NIR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Aringay",
+        "country_code": "PH",
+        "lat": 16.394,
+        "lon": 120.3545,
+        "state_code": "01",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Arayat",
+        "country_code": "PH",
+        "lat": 15.1505,
+        "lon": 120.7697,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Aparri",
+        "country_code": "PH",
+        "lat": 18.3566,
+        "lon": 121.6406,
+        "state_code": "02",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Apalit",
+        "country_code": "PH",
+        "lat": 14.95333,
+        "lon": 120.77,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Antipolo",
+        "country_code": "PH",
+        "lat": 14.62578,
+        "lon": 121.12251,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Angono",
+        "country_code": "PH",
+        "lat": 14.5266,
+        "lon": 121.1536,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Angeles City",
+        "country_code": "PH",
+        "lat": 15.15,
+        "lon": 120.58333,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Angat",
+        "country_code": "PH",
+        "lat": 14.9285,
+        "lon": 121.03,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Amadeo",
+        "country_code": "PH",
+        "lat": 14.17056,
+        "lon": 120.92361,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Alicia",
+        "country_code": "PH",
+        "lat": 16.77936,
+        "lon": 121.69734,
+        "state_code": "02",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Aliaga",
+        "country_code": "PH",
+        "lat": 15.5,
+        "lon": 120.843,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Alaminos",
+        "country_code": "PH",
+        "lat": 14.06391,
+        "lon": 121.24649,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Alabel",
+        "country_code": "PH",
+        "lat": 6.10179,
+        "lon": 125.29048,
+        "state_code": "12",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Agoo",
+        "country_code": "PH",
+        "lat": 16.08333,
+        "lon": 120.1,
+        "state_code": "01",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Abuyog",
+        "country_code": "PH",
+        "lat": 10.747,
+        "lon": 125.0107,
+        "state_code": "08",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Abucay",
+        "country_code": "PH",
+        "lat": 14.73347,
+        "lon": 120.53358,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Bagong Pagasa",
+        "country_code": "PH",
+        "lat": 14.6627,
+        "lon": 121.0328,
+        "state_code": "40",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Malingao",
+        "country_code": "PH",
+        "lat": 7.16083,
+        "lon": 124.475,
+        "state_code": "12",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Pasig City",
+        "country_code": "PH",
+        "lat": 14.58691,
+        "lon": 121.0614,
+        "state_code": "NCR",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Pandan",
+        "country_code": "PH",
+        "lat": 11.74479,
+        "lon": 122.10027,
+        "state_code": "06",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "Apas",
+        "country_code": "PH",
+        "lat": 10.34076,
+        "lon": 123.90261,
+        "state_code": "07",
+        "timezone": "Asia/Manila"
+    },
+    {
+        "alerts": [],
+        "city_name": "San Antonio",
+        "country_code": "PH",
+        "lat": 14.94659,
+        "lon": 120.08673,
+        "state_code": "03",
+        "timezone": "Asia/Manila"
+    }
+]

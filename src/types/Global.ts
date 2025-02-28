@@ -1,8 +1,8 @@
-import { GeoTech } from "../core/GeoTech";
+import { GGITech } from "../core/GGITech";
 
 declare global {
     interface Window {
-        geoTech: GeoTech;
+        ggiTech: GGITech;
     }
 }
 

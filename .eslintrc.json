@@ -2,11 +2,11 @@
     "env": {
         "browser": true
     },
-    "extends": ["airbnb", "plugin:jsx-a11y/recommended", "prettier"],
+    "extends": ["airbnb", "airbnb-typescript", "plugin:jsx-a11y/recommended", "prettier"],
     "plugins": ["jsx-a11y", "prettier", "react-hooks", "@typescript-eslint/eslint-plugin", "import"],
     "rules": {
         "import/no-unresolved": "error",
-        "complexity": ["error", { "max": 25 }],
+        "complexity": ["error", { "max": 45 }],
         "func-names": ["error", "never"],
         "import/prefer-default-export": "off",
 
@@ -54,9 +54,20 @@
         ],
         "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
         "no-shadow": "off",
-        "@typescript-eslint/no-shadow": ["error"]
+        "@typescript-eslint/no-shadow": ["error"],
+        "react/react-in-jsx-scope": "off",
+        "react/function-component-definition": [
+            2,
+            {
+              "namedComponents": "arrow-function", // or "function-expression"
+              "unnamedComponents": "arrow-function" // or "function-expression"
+            }
+          ]
     },
     "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+          "project": "./tsconfig.json"
+         },
     "settings": {
         "import/resolver": {
             "node": {

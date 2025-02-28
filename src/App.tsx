@@ -2,37 +2,26 @@
 /* qeslint-disable */
 import { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { GeoTech } from "@core/GeoTech";
-import { getCurrentUser } from "./redux";
-import Login from "./components/author/login/Login";
+import { GGITech } from "@core/GGITech";
 import Main from "./Main";
 
 interface AppProps {
-    geoTech: GeoTech;
+    ggiTech: GGITech;
 }
 
-const App = ({ geoTech }: AppProps) => {
-    const currentUser = useSelector(getCurrentUser);
-
+const App = ({ ggiTech }: AppProps) => {
     useEffect(() => {
-        if (currentUser) {
-            if (!geoTech.mainViewer.geoTechMapViewer) {
-                geoTech.mainViewer.createGeoTechMapViewer();
-            }
+        if (!ggiTech.mainViewer.ggiTechMapViewer) {
+            ggiTech.mainViewer.createGGITechMapViewer();
         }
-    }, [currentUser]);
+    }, []);
 
     return (
         <Router>
             <Switch>
-                <Route exact path="/signin" render={() => <Login />} />
-                {
-                    <Route exact path="/">
-                        {!currentUser && <Redirect to="/signin" />}
-                        <Main geoTech={geoTech} />
-                    </Route>
-                }
+                <Route exact path="/">
+                    <Main ggiTech={ggiTech} />
+                </Route>
                 <Route path="*" render={() => <Redirect to="/" />} />
             </Switch>
         </Router>

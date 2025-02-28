@@ -1,10 +1,7 @@
-import { DataActionIds } from "src/components/data-action-ids";
-import { Event } from "cesium";
+/* eslint-disable class-methods-use-this */
 
 class UIManager {
     private _prevActionId = "";
-
-    constructor() {}
 
     initialize() {
         this._setupActionClickedListener();
@@ -19,7 +16,7 @@ class UIManager {
 
         panels.forEach((panel) => {
             if (panel.hasAttribute("data-panel-id")) {
-                panel?.addEventListener("calcitePanelClose", function (event) {
+                panel?.addEventListener("calcitePanelClose", () => {
                     panel.hidden = true;
                 });
             }
@@ -48,12 +45,15 @@ class UIManager {
                 if (prevActionId) {
                     const prevAction = document.querySelector(`[data-action-id=${prevActionId}]`);
 
+                    // @ts-ignore
                     prevAction.active = false;
 
                     const prevPanel = document.querySelector(`[data-panel-id=${prevActionId}]`);
 
                     if (prevPanel) {
+                        // @ts-ignore
                         prevPanel.closed = true;
+                        // @ts-ignore
                         prevPanel.hidden = true;
                     }
                 }
@@ -62,13 +62,16 @@ class UIManager {
                     const action = document.querySelector(`[data-action-id=${currentActionId}]`);
 
                     if (currentActionId) {
+                        // @ts-ignore
                         action.active = true;
                     }
 
                     const panel = document.querySelector(`[data-panel-id=${currentActionId}]`);
 
                     if (panel) {
+                        // @ts-ignore
                         panel.closed = false;
+                        // @ts-ignore
                         panel.hidden = false;
                     }
 

@@ -1,16 +1,14 @@
-// q@ts-nocheck
-/* qeslint-disable */
+// @ts-nocheck
+/* eslint-disable */
 import { useState } from "react";
-import { GeoTechEventsTypes } from "@core/Events";
+import { GGITechEventsTypes } from "@core/Events";
 import { emitCustomEvent } from "react-custom-events";
 
 import { BasemapPickerContainer } from "./basemap-picker.style";
 
-interface Props {}
-
-const BasemapPicker = ({}: Props) => {
-    const [currentProviderViewModelIndex, setCurrentProviderViewModelIndex] = useState(1);
-    const viewer = window.geoTech.mapViewer.viewer;
+const BasemapPicker = () => {
+    const [currentProviderViewModelIndex, setCurrentProviderViewModelIndex] = useState(0);
+    const viewer = window.ggiTech.mapViewer.viewer;
 
     const imageryProviderViewModels = viewer.baseLayerPicker.viewModel.imageryProviderViewModels;
 
@@ -30,9 +28,9 @@ const BasemapPicker = ({}: Props) => {
                             <ul className="basemap-gallery__list">
                                 {imageryProviderViewModels.map((providerViewModel, index) => (
                                     <li
-                                        key={index}
+                                        key={providerViewModel.name}
                                         className={
-                                            currentProviderViewModelIndex == index
+                                            currentProviderViewModelIndex === index
                                                 ? "basemap-gallery__list__item active"
                                                 : "basemap-gallery__list__item"
                                         }
@@ -41,7 +39,7 @@ const BasemapPicker = ({}: Props) => {
                                             viewer.baseLayerPicker.viewModel.selectedImagery =
                                                 imageryProviderViewModels[index];
                                             emitCustomEvent(
-                                                GeoTechEventsTypes.BasemapChanged,
+                                                GGITechEventsTypes.BasemapChanged,
                                                 imageryProviderViewModels[index].name
                                             );
                                         }}

@@ -12,9 +12,13 @@ export interface CanvasEventHandlerParent {
 
 export class CanvasEventHandler {
     private readonly _parent: CanvasEventHandlerParent;
+
     private readonly _scene: Scene;
+
     private readonly _sseh: ScreenSpaceEventHandler;
+
     private _mouseLeftButtonDowned: boolean = false;
+
     private _mouseRightButtonDowned: boolean = false;
 
     constructor(options: { parent: CanvasEventHandlerParent; scene: Scene }) {

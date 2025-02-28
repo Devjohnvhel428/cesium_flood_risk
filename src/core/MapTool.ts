@@ -67,10 +67,15 @@ export interface MapToolConstructorOptions {
 
 export abstract class MapTool {
     private _active: boolean;
+
     protected readonly _viewer: Viewer;
+
     protected _name: string;
+
     private _cursorStyle: string | undefined;
+
     private readonly _activated: Event;
+
     private readonly _deactivated: Event;
 
     constructor(options: MapToolConstructorOptions) {
