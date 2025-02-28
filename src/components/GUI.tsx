@@ -29,7 +29,6 @@ import { useSelector } from "react-redux";
 import { emitCustomEvent } from "react-custom-events";
 
 import WeatherIconSvg from "../assets/side-nav-svgs/Weather.svg?react";
-import CalendarIconSvg from "../assets/side-nav-svgs/Calendar.svg?react";
 import EvacuationIconSvg from "../assets/side-nav-svgs/Evacuation.svg?react";
 import BasemapIconSvg from "../assets/side-nav-svgs/Basemap.svg?react";
 
@@ -39,14 +38,13 @@ import { DataActionIds } from "./data-action-ids";
 import { GlobalStyles } from "./index.styles";
 import BottomBar from "./bottombar/BottomBar";
 import GeoTechViewerWrapper from "./GeoTechViewerWrapper";
-import EntitiesLayout from "./sidebar-elements/entities/CurrentWeatherLayout";
-import FavoritesLayout from "./sidebar-elements/favorites/FavoritesLayout";
-import EmissionLayout from "./sidebar-elements/emission/EvacuationLayout";
-import AccountMenu from "./account-menu/AccountMenu";
+import CurrentWeatherLayout from "./sidebar-elements/entities/CurrentWeatherLayout";
+import EvacuationLayout from "./sidebar-elements/emission/EvacuationLayout";
 import MapControlBar from "./map-control-bar/MapControlBar";
 import BasemapPicker from "./basemap-picker/BaseMapPicker";
 import { getWeather } from "../redux";
 import { useActions } from "../hooks/useActions";
+import FullScreenLoader from "./FullScreenLoader/FullScreenLoader";
 // @ts-ignore
 import mockData from "../data/mockData_1.json";
 // @ts-ignore
@@ -62,6 +60,7 @@ const GUI = ({ geoTech }: GUIProps) => {
     const { setWeatherData } = useActions();
     const areaManager = geoTech.areaManager;
     const [alertSounded, setAlertSounded] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
         geoTech.uiManager.initialize();
@@ -83,6 +82,7 @@ const GUI = ({ geoTech }: GUIProps) => {
 
     useEffect(() => {
         if (currentWeather !== undefined) {
+            setIsLoading(true);
             if (currentWeather?.alerts?.length === 0) {
                 if (import.meta.env.VITE_USE_MOCKDATA === "true") {
                     setWeatherData({ current: mockData.data, alerts: mockAlertData });
@@ -116,6 +116,7 @@ const GUI = ({ geoTech }: GUIProps) => {
                         areaManager.alerts = alerts;
                         emitCustomEvent(GeoTechEventsTypes.AlertSounded, alerts);
                         setAlertSounded(true);
+                        setIsLoading(false);
                         toast.error(`The ${alerts.length} flood alerts are sounded!`);
                     }
                 };
@@ -128,6 +129,7 @@ const GUI = ({ geoTech }: GUIProps) => {
 
     return (
         <>
+            <FullScreenLoader isLoading={isLoading} />
             <CalciteShell contentBehind>
                 <CalciteNavigation slot="header">
                     <CalciteNavigationLogo
@@ -157,12 +159,6 @@ const GUI = ({ geoTech }: GUIProps) => {
                                 <span>Current Weather</span>
                             </CalciteTooltip>
                         </CalciteAction>
-                        <CalciteAction id="action-favorite" data-action-id={DataActionIds.Favorite} text="Historical">
-                            <CalendarIconSvg />
-                            <CalciteTooltip reference-element="action-favorite" closeOnClick={true}>
-                                <span>Historical Data</span>
-                            </CalciteTooltip>
-                        </CalciteAction>
                         <CalciteAction
                             className={alertSounded ? "flood-evacuation" : ""}
                             id="action-emission"
@@ -190,15 +186,11 @@ const GUI = ({ geoTech }: GUIProps) => {
                         closed
                         hidden
                     >
-                        <EntitiesLayout />
-                    </CalcitePanel>
-
-                    <CalcitePanel heading="Favorite" data-panel-id={DataActionIds.Favorite} closable closed hidden>
-                        <FavoritesLayout />
+                        <CurrentWeatherLayout />
                     </CalcitePanel>
 
                     <CalcitePanel heading="Evacuation" data-panel-id={DataActionIds.Emission} closable closed hidden>
-                        <EmissionLayout />
+                        <EvacuationLayout />
                     </CalcitePanel>
 
                     <CalcitePanel heading="Basemap" data-panel-id={DataActionIds.Basemap} closable closed hidden>
@@ -212,8 +204,6 @@ const GUI = ({ geoTech }: GUIProps) => {
                 <BottomBar />
                 <MapControlBar />
             </CalciteShell>
-
-            <AccountMenu />
             <ToastContainer position="top-right" style={{ fontSize: "12pt" }} />
         </>
     );

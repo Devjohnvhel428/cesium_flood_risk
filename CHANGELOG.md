@@ -1,5 +1,12 @@
 # Change Log
 
+### 1.0.7 - 2025-02-27
+
+#### Added & Updated
+
+-   Added Helper page
+-   Remove and clear unnecessary code files
+
 ### 1.0.6 - 2025-02-27
 
 #### Added

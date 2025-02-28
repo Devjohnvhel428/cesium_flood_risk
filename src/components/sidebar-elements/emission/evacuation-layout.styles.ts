@@ -2,17 +2,7 @@
 /* qeslint-disable */
 import styled from "styled-components";
 
-import {
-    iconColorLightTheme,
-    lmColorWhiteOne,
-    dmColorGreyOne,
-    dmColorGreyTwo,
-    dmColorGreyFour,
-    dmColorGreyFive,
-    dmColorBlueOne,
-    panelHeaderFontSize,
-    panelHeaderFontWeight
-} from "../../gui-variables.styles";
+import { iconColorLightTheme, lmColorWhiteOne, dmColorGreyOne, dmColorGreyFive } from "../../gui-variables.styles";
 
 interface EvacuationLayoutExpandedProps {
     $light?: boolean;

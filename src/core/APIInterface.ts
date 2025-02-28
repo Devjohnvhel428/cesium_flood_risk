@@ -29,17 +29,16 @@ class APIInterface {
     async fetchWeatherForCities(cityChunk) {
         const queryString = cityChunk.map((city) => city.city_id).join(",");
         const url = `${this._baseWeatherUrl}current?cities=${queryString}&key=${this._weatherAPIKey}`;
-        console.log("url", url);
-        // try {
-        //     const response = await fetch(url);
-        //     if (!response.ok) {
-        //         throw new Error(`Error fetching data: ${response.statusText}`);
-        //     }
-        //     return await response.json();
-        // } catch (error) {
-        //     console.error("Error fetching weather data:", error);
-        //     return null; // Return null or handle the error as needed
-        // }
+        try {
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error(`Error fetching data: ${response.statusText}`);
+            }
+            return await response.json();
+        } catch (error) {
+            console.error("Error fetching weather data:", error);
+            return null; // Return null or handle the error as needed
+        }
     }
 
     // Main function to fetch weather data for all cities
@@ -50,9 +49,9 @@ class APIInterface {
         // Sequentially fetch data for each chunk
         for (const chunk of cityChunks) {
             const response = await this.fetchWeatherForCities(chunk);
-            // if (response) {
-            //     allResponses.push(response); // Collect the response
-            // }
+            if (response) {
+                allResponses.push(response); // Collect the response
+            }
         }
 
         // Combine all responses into a single result
@@ -69,6 +68,7 @@ class APIInterface {
                 throw new Error(`Error fetching data: ${response.statusText}`);
             }
             const data = await response.json();
+            return data;
         } catch (error) {
             console.error("Error fetching weather data:", error);
             return null; // Return null or handle the error as needed
