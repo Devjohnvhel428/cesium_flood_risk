@@ -32,12 +32,12 @@ import WeatherIconSvg from "../assets/side-nav-svgs/Weather.svg?react";
 import EvacuationIconSvg from "../assets/side-nav-svgs/Evacuation.svg?react";
 import BasemapIconSvg from "../assets/side-nav-svgs/Basemap.svg?react";
 
-import { GeoTech } from "@core/GeoTech";
-import { GeoTechEventsTypes } from "@core/Events";
+import { GGITech } from "@core/GGITech";
+import { GGITechEventsTypes } from "@core/Events";
 import { DataActionIds } from "./data-action-ids";
 import { GlobalStyles } from "./index.styles";
 import BottomBar from "./bottombar/BottomBar";
-import GeoTechViewerWrapper from "./GeoTechViewerWrapper";
+import GGITechViewerWrapper from "./GGITechViewerWrapper";
 import CurrentWeatherLayout from "./sidebar-elements/entities/CurrentWeatherLayout";
 import EvacuationLayout from "./sidebar-elements/emission/EvacuationLayout";
 import MapControlBar from "./map-control-bar/MapControlBar";
@@ -51,23 +51,23 @@ import mockData from "../data/mockData_1.json";
 import mockAlertData from "../data/mockAlertData_1.json";
 
 interface GUIProps {
-    geoTech: GeoTech;
+    ggiTech: GGITech;
 }
 
 // eslint-disable-next-line arrow-body-style
-const GUI = ({ geoTech }: GUIProps) => {
+const GUI = ({ ggiTech }: GUIProps) => {
     const currentWeather = useSelector(getWeather);
     const { setWeatherData } = useActions();
-    const areaManager = geoTech.areaManager;
+    const areaManager = ggiTech.areaManager;
     const [alertSounded, setAlertSounded] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
-        geoTech.uiManager.initialize();
+        ggiTech.uiManager.initialize();
         if (import.meta.env.VITE_USE_MOCKDATA === "false") {
             let response = null;
             const fetchWeatherData = async () => {
-                response = await geoTech.apiInterface.fetchWeatherForAllCities();
+                response = await ggiTech.apiInterface.fetchWeatherForAllCities();
                 setWeatherData(response?.data);
             };
             fetchWeatherData();
@@ -97,7 +97,7 @@ const GUI = ({ geoTech }: GUIProps) => {
                             const area = areaManager.getAreaByCityName(alert.city_name);
                             area.setAlert(alert);
                             alerts.push(alert);
-                            const city_data = await geoTech.apiInterface.fetchCityData(
+                            const city_data = await ggiTech.apiInterface.fetchCityData(
                                 alert.city_name,
                                 area.latitude,
                                 area.longitude
@@ -114,7 +114,7 @@ const GUI = ({ geoTech }: GUIProps) => {
                     if (alerts.length > 0) {
                         areaManager.cleanAlerts();
                         areaManager.alerts = alerts;
-                        emitCustomEvent(GeoTechEventsTypes.AlertSounded, alerts);
+                        emitCustomEvent(GGITechEventsTypes.AlertSounded, alerts);
                         setAlertSounded(true);
                         setIsLoading(false);
                         toast.error(`The ${alerts.length} flood alerts are sounded!`);
@@ -125,7 +125,7 @@ const GUI = ({ geoTech }: GUIProps) => {
         }
     }, [currentWeather]);
 
-    const isMobile = geoTech.isMobile();
+    const isMobile = ggiTech.isMobile();
 
     return (
         <>
@@ -198,7 +198,7 @@ const GUI = ({ geoTech }: GUIProps) => {
                     </CalcitePanel>
                 </CalciteShellPanel>
 
-                <GeoTechViewerWrapper geoTech={geoTech} />
+                <GGITechViewerWrapper ggiTech={ggiTech} />
 
                 <GlobalStyles />
                 <BottomBar />

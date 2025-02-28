@@ -1,7 +1,7 @@
 // q@ts-nocheck
 /* qeslint-disable */
 import { useState } from "react";
-import { GeoTechEventsTypes } from "@core/Events";
+import { GGITechEventsTypes } from "@core/Events";
 import { emitCustomEvent } from "react-custom-events";
 
 import { BasemapPickerContainer } from "./basemap-picker.style";
@@ -10,7 +10,7 @@ interface Props {}
 
 const BasemapPicker = ({}: Props) => {
     const [currentProviderViewModelIndex, setCurrentProviderViewModelIndex] = useState(0);
-    const viewer = window.geoTech.mapViewer.viewer;
+    const viewer = window.ggiTech.mapViewer.viewer;
 
     const imageryProviderViewModels = viewer.baseLayerPicker.viewModel.imageryProviderViewModels;
 
@@ -41,7 +41,7 @@ const BasemapPicker = ({}: Props) => {
                                             viewer.baseLayerPicker.viewModel.selectedImagery =
                                                 imageryProviderViewModels[index];
                                             emitCustomEvent(
-                                                GeoTechEventsTypes.BasemapChanged,
+                                                GGITechEventsTypes.BasemapChanged,
                                                 imageryProviderViewModels[index].name
                                             );
                                         }}

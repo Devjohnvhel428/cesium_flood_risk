@@ -29,7 +29,7 @@ const BottomBar = () => {
     const latLongShowType = "DEGREES_MINUTES_SECONDS";
 
     const distancePrecision = 3;
-    const viewer = window.geoTech.mapViewer.viewer;
+    const viewer = window.ggiTech.mapViewer.viewer;
     const scene = viewer.scene;
 
     const clear = () => {

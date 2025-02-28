@@ -1,5 +1,12 @@
 # Change Log
 
+### 1.0.8 - 2025-02-28
+
+#### Added & Updated
+
+-   Updated core classes
+-   Customized Readme.md file
+
 ### 1.0.7 - 2025-02-27
 
 #### Added & Updated

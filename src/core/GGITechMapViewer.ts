@@ -33,13 +33,13 @@ import {
     ColorMaterialProperty
 } from "cesium";
 import viewerCesiumNavigationMixin from "./cesium-navigation-es6/viewerCesiumNavigationMixin";
-import { GeoTech } from "./GeoTech";
+import { GGITech } from "./GGITech";
 import { Area, defaultHeight } from "./Area";
 import { CapturedCameraProps } from "./common";
 // @ts-ignore
 
-export class GeoTechMapViewer {
-    private readonly _geoTech: GeoTech;
+export class GGITechMapViewer {
+    private readonly _ggiTech: GGITech;
 
     private readonly _viewer: Viewer;
 
@@ -51,7 +51,7 @@ export class GeoTechMapViewer {
 
     private _hoverLabel: Label;
 
-    constructor(container: HTMLElement, geoTech: GeoTech) {
+    constructor(container: HTMLElement, ggiTech: GGITech) {
         // >>includeStart('debug', pragmas.debug);
         if (!defined(container)) {
             throw new DeveloperError("container is required.");
@@ -63,7 +63,7 @@ export class GeoTechMapViewer {
         Camera.DEFAULT_VIEW_RECTANGLE = extent;
         Camera.DEFAULT_VIEW_FACTOR = 0.03;
 
-        this._geoTech = geoTech;
+        this._ggiTech = ggiTech;
 
         this._baseImageryProviders = createDefaultImageryProviderViewModels();
         const selectedImageryProviderIndex = 0;
@@ -174,7 +174,7 @@ export class GeoTechMapViewer {
 
         const geoJsonUrl = "/data/county.json";
 
-        this.addGeoJsonDataSourceWithPopulationColor(geoJsonUrl)
+        this.addGeoJsonDataSource(geoJsonUrl)
             .then(function (dataSource) {
                 viewer.dataSources.add(dataSource);
                 dataSource.entities.values.forEach(function (entity) {
@@ -213,7 +213,7 @@ export class GeoTechMapViewer {
 
             if (!pickedObject) {
                 this._hoverLabel.show = false;
-                this._geoTech.areaManager.dehighlightAll();
+                this._ggiTech.areaManager.dehighlightAll();
                 return;
             }
 
@@ -232,7 +232,7 @@ export class GeoTechMapViewer {
 
             const id = primitive.id;
 
-            const area = this._geoTech.areaManager.getAreaByCityName(id);
+            const area = this._ggiTech.areaManager.getAreaByCityName(id);
 
             const longitude = area.longitude;
             const latitude = area.latitude;
@@ -250,7 +250,7 @@ export class GeoTechMapViewer {
             const selectedEntity = new Entity();
 
             if (!pickedObject) {
-                this._geoTech.areaManager.dehighlightAll();
+                this._ggiTech.areaManager.dehighlightAll();
                 return;
             }
 
@@ -265,7 +265,7 @@ export class GeoTechMapViewer {
             }
 
             const id = primitive.id;
-            const area = this._geoTech.areaManager.getAreaByCityName(id);
+            const area = this._ggiTech.areaManager.getAreaByCityName(id);
             this.showPropertyTable(area);
         }, ScreenSpaceEventType.LEFT_CLICK);
     }
@@ -342,7 +342,7 @@ export class GeoTechMapViewer {
         selectedEntity.description = this.getPropertyTable(area.properties);
     }
 
-    addGeoJsonDataSourceWithPopulationColor(url) {
+    addGeoJsonDataSource(url) {
         let dataSource = null;
         return GeoJsonDataSource.load(url).then(function (loadedDataSource) {
             dataSource = loadedDataSource;

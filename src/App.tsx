@@ -2,17 +2,17 @@
 /* qeslint-disable */
 import { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
-import { GeoTech } from "@core/GeoTech";
+import { GGITech } from "@core/GGITech";
 import Main from "./Main";
 
 interface AppProps {
-    geoTech: GeoTech;
+    ggiTech: GGITech;
 }
 
-const App = ({ geoTech }: AppProps) => {
+const App = ({ ggiTech }: AppProps) => {
     useEffect(() => {
-        if (!geoTech.mainViewer.geoTechMapViewer) {
-            geoTech.mainViewer.createGeoTechMapViewer();
+        if (!ggiTech.mainViewer.ggiTechMapViewer) {
+            ggiTech.mainViewer.createGGITechMapViewer();
         }
     }, []);
 
@@ -21,7 +21,7 @@ const App = ({ geoTech }: AppProps) => {
             <Switch>
                 {
                     <Route exact path="/">
-                        <Main geoTech={geoTech} />
+                        <Main ggiTech={ggiTech} />
                     </Route>
                 }
                 <Route path="*" render={() => <Redirect to="/" />} />

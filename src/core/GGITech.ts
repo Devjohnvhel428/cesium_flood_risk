@@ -1,6 +1,6 @@
 /* qeslint-disable*/
 import { BoundingSphere, Cartesian3, HeadingPitchRange, Event, Math as CesiumMath } from "cesium";
-import { GeoTechViewer } from "./GeoTechViewer";
+import { GGITechViewer } from "./GGITechViewer";
 import { CanvasEventHandler } from "./CanvasEventHandler";
 import { MapTool } from "./MapTool";
 import { Area } from "./Area";
@@ -9,10 +9,10 @@ import APIInterface from "./APIInterface";
 import UIManager from "./UIManager";
 import NavigationHelper from "./NavigationHelper";
 
-export class GeoTech {
+export class GGITech {
     readonly rootElementId = "root";
 
-    readonly mainViewer = new GeoTechViewer(this);
+    readonly mainViewer = new GGITechViewer(this);
 
     readonly apiInterface = new APIInterface();
 
@@ -37,11 +37,11 @@ export class GeoTech {
     }
 
     get viewer() {
-        return this.mainViewer.geoTechMapViewer!.viewer;
+        return this.mainViewer.ggiTechMapViewer!.viewer;
     }
 
     get mapViewer() {
-        return this.mainViewer.geoTechMapViewer!;
+        return this.mainViewer.ggiTechMapViewer!;
     }
 
     get areaManager() {
@@ -116,7 +116,7 @@ export class GeoTech {
         });
 
         this._areaManager = new AreaManager({
-            geoTech: this,
+            ggiTech: this,
             scene: this.scene
         });
     }

@@ -1,5 +1,5 @@
 import "./index.scss";
-import { GeoTech } from "@core/GeoTech";
+import { GGITech } from "@core/GGITech";
 import render from "./render";
 
 import { setAssetPath } from "@esri/calcite-components/dist/components";
@@ -7,9 +7,9 @@ import { setAssetPath } from "@esri/calcite-components/dist/components";
 import "@esri/calcite-components/dist/calcite/calcite.css";
 setAssetPath("https://js.arcgis.com/calcite-components/2.13.2/assets");
 
-const geoTech = new GeoTech();
-window.geoTech = geoTech;
+const ggiTech = new GGITech();
+window.ggiTech = ggiTech;
 
-geoTech.start();
+ggiTech.start();
 
-render(geoTech);
+render(ggiTech);

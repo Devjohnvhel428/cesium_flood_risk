@@ -21,8 +21,8 @@ interface SelectOption {
 }
 
 const CurrentWeatherLayout = () => {
-    const geoTech = window.geoTech;
-    const areaManager = geoTech.areaManager;
+    const ggiTech = window.ggiTech;
+    const areaManager = ggiTech.areaManager;
     const [weatherShowTypes, setWeatherShowTypes] = useState<SelectWeatherShowTypeProps[]>([
         {
             active: true,
@@ -86,7 +86,7 @@ const CurrentWeatherLayout = () => {
         setSelectedOption(value);
         const selectedArea = areaManager.getAreaByCityName(value.value);
         if (selectedArea) {
-            geoTech.zoomToArea(selectedArea);
+            ggiTech.zoomToArea(selectedArea);
         }
     };
 

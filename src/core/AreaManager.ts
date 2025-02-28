@@ -9,22 +9,21 @@ import {
     Event,
     Scene,
     ScreenSpaceEventHandler,
-    ScreenSpaceEventType,
-    PrimitiveCollection
+    ScreenSpaceEventType
 } from "cesium";
 import { GeoJsonGeometryTypes, Point } from "geojson";
 
-import { GeoTech } from "./GeoTech";
+import { GGITech } from "./GGITech";
 import { WeatherType } from "./common";
 import { Area, defaultHeight } from "./Area";
 
 interface ConstructorOptions {
-    geoTech: GeoTech;
+    ggiTech: GGITech;
     scene: Scene;
 }
 
 export class AreaManager {
-    readonly _geoTech: GeoTech;
+    readonly _ggiTech: GGITech;
 
     readonly _scene: Scene;
 
@@ -41,7 +40,7 @@ export class AreaManager {
     readonly _weather: Event = new Event();
 
     constructor(options: ConstructorOptions) {
-        this._geoTech = options.geoTech;
+        this._ggiTech = options.ggiTech;
         this._areaList = [];
         this._scene = options.scene;
 

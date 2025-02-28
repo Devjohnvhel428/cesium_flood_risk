@@ -7,19 +7,19 @@ import ZoomOutIconSvg from "../../assets/map-control-bar-svgs/ZoomOut.svg?react"
 import QuestionIconSvg from "../../assets/map-control-bar-svgs/Question.svg?react";
 
 const MapControlBar = () => {
-    const geoTech = window.geoTech;
+    const ggiTech = window.ggiTech;
     const [isHelperOpened, setIsHelperOpened] = useState(false);
 
     const handleZoomIn = () => {
-        geoTech.navigationHelper.zoom(0.5);
+        ggiTech.navigationHelper.zoom(0.5);
     };
 
     const handleZoomOut = () => {
-        geoTech.navigationHelper.zoom(2);
+        ggiTech.navigationHelper.zoom(2);
     };
 
     const handleHome = () => {
-        geoTech.navigationHelper.resetView();
+        ggiTech.navigationHelper.resetView();
     };
 
     const handleCloseHelper = () => {

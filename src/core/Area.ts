@@ -215,7 +215,7 @@ export class Area {
     }
 
     drawCityRange() {
-        const geoTech = window.geoTech;
+        const ggiTech = window.ggiTech;
 
         // Initial radius and animation parameters
         let baseRadius = this.getRadius(
@@ -233,7 +233,7 @@ export class Area {
         };
 
         // Add the initial circle entity
-        this.cityRange = geoTech.viewer.entities.add({
+        this.cityRange = ggiTech.viewer.entities.add({
             id: this._properties.id,
             polygon: {
                 hierarchy: new PolygonHierarchy(generateCirclePositions(radius)),

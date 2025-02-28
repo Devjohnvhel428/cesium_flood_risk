@@ -1,4 +1,4 @@
-export enum GeoTechEventsTypes {
+export enum GGITechEventsTypes {
     BasemapChanged = "BasemapChanged",
     AlertSounded = "AlertSounded"
 }

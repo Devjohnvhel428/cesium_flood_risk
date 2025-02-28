@@ -17,9 +17,9 @@ import AlertDialog from "../../dialogs/alert/AlertDialog";
 interface EvacuationLayoutProps {}
 
 const EvacuationLayout = ({}: EvacuationLayoutProps) => {
-    const geoTech = window.geoTech;
-    const areaManager = geoTech.areaManager;
-    const viewer = geoTech.viewer;
+    const ggiTech = window.ggiTech;
+    const areaManager = ggiTech.areaManager;
+    const viewer = ggiTech.viewer;
     const [alerts, setAlerts] = useState([]);
     const [isAlertDialogOpen, setIsAlertDialogOpen] = useState(false);
     const [dialogData, setDialogData] = useState(undefined);
@@ -32,7 +32,7 @@ const EvacuationLayout = ({}: EvacuationLayoutProps) => {
 
     const handleAlertItemClicked = (city: string, alert: any) => {
         const area = areaManager.getAreaByCityName(city);
-        geoTech.zoomToArea(area);
+        ggiTech.zoomToArea(area);
         setDialogData(alert);
         setIsAlertDialogOpen(true);
         setAlertCity(city);

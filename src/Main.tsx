@@ -3,14 +3,14 @@
 import { useEffect, useState } from "react";
 import "cesium/Build/Cesium/Widgets/widgets.css";
 import GUI from "./components/GUI";
-import { GeoTech } from "./core/GeoTech";
+import { GGITech } from "./core/GGITech";
 
 interface MainProps {
-    geoTech: GeoTech;
+    ggiTech: GGITech;
 }
 
-function Main({ geoTech }: MainProps) {
-    const [mapViewerCreated, setMapViewerCreated] = useState(geoTech.mainViewer.geoTechMapViewer !== undefined);
+function Main({ ggiTech }: MainProps) {
+    const [mapViewerCreated, setMapViewerCreated] = useState(ggiTech.mainViewer.ggiTechMapViewer !== undefined);
 
     useEffect(() => {
         const onMapViewerCreated = () => {
@@ -19,14 +19,14 @@ function Main({ geoTech }: MainProps) {
             }
         };
 
-        geoTech.mainViewer.mapViewerCreated.addEventListener(onMapViewerCreated);
+        ggiTech.mainViewer.mapViewerCreated.addEventListener(onMapViewerCreated);
 
         return function () {
-            geoTech.mainViewer.mapViewerCreated.removeEventListener(onMapViewerCreated);
+            ggiTech.mainViewer.mapViewerCreated.removeEventListener(onMapViewerCreated);
         };
     }, []);
 
-    return <>{mapViewerCreated && <GUI geoTech={geoTech} />}</>;
+    return <>{mapViewerCreated && <GUI ggiTech={ggiTech} />}</>;
 }
 
 export default Main;
