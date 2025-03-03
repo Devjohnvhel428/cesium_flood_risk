@@ -1,4 +1,7 @@
-/* qeslint-disable*/
+/* qeslint-disable */
+
+/* eslint-disable import/no-cycle */
+/* eslint-disable class-methods-use-this */
 import { BoundingSphere, Cartesian3, HeadingPitchRange, Event, Math as CesiumMath } from "cesium";
 import { GGITechViewer } from "./GGITechViewer";
 import { CanvasEventHandler } from "./CanvasEventHandler";
@@ -60,7 +63,6 @@ export class GGITech {
         return "ontouchstart" in document.documentElement && navigator.userAgent.match(/Mobi/) !== null;
     }
 
-    // eslint-disable-next-line class-methods-use-this
     start() {
         console.info("start");
     }

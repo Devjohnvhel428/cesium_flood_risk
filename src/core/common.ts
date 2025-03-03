@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 import { Cartesian3 } from "cesium";
 
 export enum WeatherType {

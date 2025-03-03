@@ -12,34 +12,32 @@ interface DialogProps {
     onClose: () => void;
 }
 
-const AlertDialog = ({ open, data = undefined, city = "", onClose }: DialogProps) => {
-    return (
-        <CalciteDialog
-            open={open}
-            modal
-            heading={`The ${data?.type || "alert"}  in ${city}.`}
-            scale="s"
-            widthScale="s"
-            outsideCloseDisabled
-            closeDisabled
-            id="confirm-dialog"
+const AlertDialog = ({ open, data = undefined, city = "", onClose }: DialogProps) => (
+    <CalciteDialog
+        open={open}
+        modal
+        heading={`The ${data?.type || "alert"}  in ${city}.`}
+        scale="s"
+        widthScale="s"
+        outsideCloseDisabled
+        closeDisabled
+        id="confirm-dialog"
+    >
+        <AlertDialogContainer>
+            <div className="confirm-content">
+                <span className="confirm-text">{data?.description || ""}</span>
+            </div>
+        </AlertDialogContainer>
+        <CalciteButton
+            slot="footer-end"
+            appearance="outline"
+            onClick={() => {
+                onClose();
+            }}
         >
-            <AlertDialogContainer>
-                <div className="confirm-content">
-                    <span className="confirm-text">{data?.description || ""}</span>
-                </div>
-            </AlertDialogContainer>
-            <CalciteButton
-                slot="footer-end"
-                appearance="outline"
-                onClick={() => {
-                    onClose();
-                }}
-            >
-                Cancel
-            </CalciteButton>
-        </CalciteDialog>
-    );
-};
+            Cancel
+        </CalciteButton>
+    </CalciteDialog>
+);
 
 export default AlertDialog;

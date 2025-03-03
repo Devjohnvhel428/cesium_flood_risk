@@ -1,10 +1,7 @@
-import { DataActionIds } from "src/components/data-action-ids";
-import { Event } from "cesium";
+/* eslint-disable class-methods-use-this */
 
 class UIManager {
     private _prevActionId = "";
-
-    constructor() {}
 
     initialize() {
         this._setupActionClickedListener();
@@ -19,7 +16,7 @@ class UIManager {
 
         panels.forEach((panel) => {
             if (panel.hasAttribute("data-panel-id")) {
-                panel?.addEventListener("calcitePanelClose", function (event) {
+                panel?.addEventListener("calcitePanelClose", () => {
                     panel.hidden = true;
                 });
             }

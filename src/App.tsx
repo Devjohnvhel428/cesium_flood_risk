@@ -19,11 +19,9 @@ const App = ({ ggiTech }: AppProps) => {
     return (
         <Router>
             <Switch>
-                {
-                    <Route exact path="/">
-                        <Main ggiTech={ggiTech} />
-                    </Route>
-                }
+                <Route exact path="/">
+                    <Main ggiTech={ggiTech} />
+                </Route>
                 <Route path="*" render={() => <Redirect to="/" />} />
             </Switch>
         </Router>

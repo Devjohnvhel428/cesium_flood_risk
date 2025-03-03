@@ -1,13 +1,19 @@
+/* eslint-disable import/no-cycle */
 import { defined, DeveloperError, Event } from "cesium";
 import { GGITech } from "./GGITech";
 import { GGITechMapViewer } from "./GGITechMapViewer";
 
 export class GGITechViewer {
     readonly ggiTech: GGITech;
+
     mapContainer: HTMLElement | undefined;
+
     ggiTechMapViewer: GGITechMapViewer | undefined;
+
     readonly mapViewerCreated = new Event();
+
     readonly mapViewerDestroyed = new Event();
+
     destroyingGGITechMapViewer: boolean = false;
 
     constructor(ggiTech: GGITech) {

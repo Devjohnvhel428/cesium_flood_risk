@@ -2,4 +2,6 @@ node_modules
 /.eslintcache
 /build
 /dist
+/*.tsbuildinfo
+/public/assets
 .env

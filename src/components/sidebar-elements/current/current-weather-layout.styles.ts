@@ -5,12 +5,9 @@ import styled from "styled-components";
 import {
     iconColorLightTheme,
     lmColorWhiteOne,
-    dmColorBlueOne,
-    dmColorBlueTwo,
     dmColorGreyOne,
     dmColorGreyTwo,
-    dmColorGreyFive,
-    dmColorBlackOne
+    dmColorGreyFive
 } from "../../gui-variables.styles";
 
 interface CurrentWeatherLayoutExpandedExpandedProps {

@@ -9,7 +9,7 @@ interface MainProps {
     ggiTech: GGITech;
 }
 
-function Main({ ggiTech }: MainProps) {
+const Main = ({ ggiTech }: MainProps) => {
     const [mapViewerCreated, setMapViewerCreated] = useState(ggiTech.mainViewer.ggiTechMapViewer !== undefined);
 
     useEffect(() => {
@@ -26,7 +26,7 @@ function Main({ ggiTech }: MainProps) {
         };
     }, []);
 
-    return <>{mapViewerCreated && <GUI ggiTech={ggiTech} />}</>;
-}
+    return mapViewerCreated ? <GUI ggiTech={ggiTech} /> : null;
+};
 
 export default Main;

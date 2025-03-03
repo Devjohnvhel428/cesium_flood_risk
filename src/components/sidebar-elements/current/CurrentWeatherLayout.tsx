@@ -61,7 +61,6 @@ const CurrentWeatherLayout = () => {
             type: WeatherType.STATE_900
         }
     ]);
-    const [isAllChecked, setIsAllChecked] = useState(true);
     const [selectOptions, setSelectOptions] = useState<SelectOption[]>([]);
     const [selectedOption, setSelectedOption] = useState<SelectOption>(undefined);
 
@@ -73,11 +72,6 @@ const CurrentWeatherLayout = () => {
         });
         weatherShowTypes[index].active = checked;
         setWeatherShowTypes([...weatherShowTypes]);
-        if (unitType === WeatherType.STATE_000) {
-            setIsAllChecked(true);
-        } else {
-            setIsAllChecked(false);
-        }
 
         areaManager.setFilterWithCondition(unitType);
     };
@@ -91,7 +85,7 @@ const CurrentWeatherLayout = () => {
     };
 
     useEffect(() => {
-        let allOptions = [];
+        const allOptions = [];
         if (currentWeather !== undefined) {
             currentWeather?.current?.forEach((property) => {
                 const newSelectOption = {

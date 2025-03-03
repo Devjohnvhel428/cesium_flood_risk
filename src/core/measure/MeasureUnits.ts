@@ -1,6 +1,6 @@
 // q@ts-nocheck
 /* qeslint-disable */
-/* eslint-disable no-param-reassign, spaced-comment, prefer-const, no-use-before-define, no-else-return, prefer-template, radix, consistent-return, @typescript-eslint/no-use-before-define */
+/* eslint-disable no-param-reassign, spaced-comment, prefer-const, no-else-return, prefer-template, radix, consistent-return, @typescript-eslint/no-use-before-define */
 // @ts-ignore
 import { Check, defaultValue, DeveloperError, Math as CesiumMath, RuntimeError } from "cesium";
 import DistanceUnits from "./DistanceUnits";
@@ -18,9 +18,13 @@ interface MeasureUnitsConstructorOptions {
 
 class MeasureUnits {
     distanceUnits: string;
+
     areaUnits: string;
+
     volumeUnits: string;
+
     angleUnits: string;
+
     slopeUnits: string;
 
     constructor(options: MeasureUnitsConstructorOptions) {
@@ -40,9 +44,13 @@ class MeasureUnits {
     }
 
     static convertDistance: (distance: number, from: string, to: string) => number;
+
     static convertArea: (area: number, from: string, to: string) => number;
+
     static convertVolume: (volume: number, from: string, to: string) => number;
+
     static convertAngle: (angle: number, from: string, to: string) => number;
+
     static numberToString: (
         number: number,
         selectedLocale: string | string[],
@@ -83,6 +91,7 @@ class MeasureUnits {
     ) => string;
 
     static getVolumeUnitSpacing: (volumeUnits: string) => string;
+
     static getVolumeUnitSymbol: (volumeUnits: string) => string;
 
     static angleToString: (

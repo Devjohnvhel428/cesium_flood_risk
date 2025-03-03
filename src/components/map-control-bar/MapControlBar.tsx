@@ -29,22 +29,23 @@ const MapControlBar = () => {
     return (
         <MapControlBarContainer id="map-control-bar-container" className="map-control-bar-container">
             <div className="btn-container">
-                <button onClick={handleHome} className="icon-button">
+                <button type="button" onClick={handleHome} className="icon-button">
                     <HomeIconSvg />
                 </button>
             </div>
             <div className="btn-container">
-                <button onClick={handleZoomIn} className="icon-button">
+                <button type="button" onClick={handleZoomIn} className="icon-button">
                     <ZoomInIconSvg />
                 </button>
             </div>
             <div className="btn-container">
-                <button onClick={handleZoomOut} className="icon-button">
+                <button type="button" onClick={handleZoomOut} className="icon-button">
                     <ZoomOutIconSvg />
                 </button>
             </div>
             <div className="btn-container">
                 <button
+                    type="button"
                     onClick={() => {
                         setIsHelperOpened(true);
                     }}
