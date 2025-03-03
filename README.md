@@ -48,17 +48,19 @@ Follow these steps to set up and run the project locally:
     ```bash
     git clone https://github.com/Devjohnvhel428/cesium_flood_risk.git
     cd cesium_flood_risk
+    ```
+    ```bash
     Install dependencies:
-    bash
+    yarn install
     ```
 
-yarn install
 Start the development server:
-bash
 
+```bash
 yarn dev
+```
+
 Open your browser and navigate to:
-javascript
 
 http://localhost:5173/
 
