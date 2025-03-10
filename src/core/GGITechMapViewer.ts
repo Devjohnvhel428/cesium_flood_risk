@@ -109,10 +109,6 @@ export class GGITechMapViewer {
 
         viewer.baseLayerPicker.viewModel.imageryProviderViewModels.forEach((viewModel) => {
             if (!removeMapsList.includes(viewModel.name)) {
-                if (viewModel.name === "Bing Maps Aerial") {
-                    viewModel.name = "Google 3d";
-                }
-
                 providerViewModels.push(viewModel);
             }
         });

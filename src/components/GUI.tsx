@@ -16,9 +16,6 @@ import "@esri/calcite-components/dist/components/calcite-tooltip";
 import {
     CalciteActionBar,
     CalciteAction,
-    CalciteNavigation,
-    CalciteNavigationLogo,
-    CalciteNavigationUser,
     CalcitePanel,
     CalciteShell,
     CalciteShellPanel,
@@ -131,15 +128,6 @@ const GUI = ({ ggiTech }: GUIProps) => {
         <>
             <FullScreenLoader isLoading={isLoading} />
             <CalciteShell contentBehind>
-                <CalciteNavigation slot="header">
-                    <CalciteNavigationLogo id="header-title" heading="GGI" heading-level="1" slot="logo" />
-                    <CalciteNavigationUser
-                        slot="user"
-                        full-name={import.meta.env.VITE_USER_EMAIL}
-                        username={import.meta.env.VITE_USER_NAME}
-                    />
-                </CalciteNavigation>
-
                 <CalciteShellPanel slot="panel-start" hidden={isMobile}>
                     <CalciteActionBar slot="action-bar" expanded className="calcite-mode-dark">
                         <CalciteAction
@@ -166,10 +154,10 @@ const GUI = ({ ggiTech }: GUIProps) => {
                             </CalciteTooltip>
                         </CalciteAction>
 
-                        <CalciteAction id="action-basemap" data-action-id={DataActionIds.Basemap} text="Basemap">
+                        <CalciteAction id="action-basemap" data-action-id={DataActionIds.Basemap} text="Imagery Layers">
                             <BasemapIconSvg />
                             <CalciteTooltip reference-element="action-basemap" closeOnClick>
-                                <span>Basemap</span>
+                                <span>Imagery Layers</span>
                             </CalciteTooltip>
                         </CalciteAction>
                     </CalciteActionBar>
@@ -188,7 +176,7 @@ const GUI = ({ ggiTech }: GUIProps) => {
                         <EvacuationLayout />
                     </CalcitePanel>
 
-                    <CalcitePanel heading="Basemap" data-panel-id={DataActionIds.Basemap} closable closed hidden>
+                    <CalcitePanel heading="Imagery Layers" data-panel-id={DataActionIds.Basemap} closable closed hidden>
                         <BasemapPicker />
                     </CalcitePanel>
                 </CalciteShellPanel>
