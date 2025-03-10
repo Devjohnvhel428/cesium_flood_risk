@@ -82,3 +82,4 @@ http://localhost:5173/
 5. Customizing the Map
    Use the map control bar to switch between different base maps (e.g., satellite, terrain, street view).
    Zoom in and out or pan across the map to explore different regions.
+   Fully customized map navigation functions
